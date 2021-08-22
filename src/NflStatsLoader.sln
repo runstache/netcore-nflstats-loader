@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NflStats.Data", "NflStats.Data\NflStats.Data.csproj", "{22B7CAF3-D234-4278-B242-396F3EE26031}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NflStats.Loader", "NflStats.Loader\NflStats.Loader.csproj", "{3FBB614F-2324-4CBD-BDA2-A6BF4623AF93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22B7CAF3-D234-4278-B242-396F3EE26031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22B7CAF3-D234-4278-B242-396F3EE26031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22B7CAF3-D234-4278-B242-396F3EE26031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22B7CAF3-D234-4278-B242-396F3EE26031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FBB614F-2324-4CBD-BDA2-A6BF4623AF93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FBB614F-2324-4CBD-BDA2-A6BF4623AF93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FBB614F-2324-4CBD-BDA2-A6BF4623AF93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FBB614F-2324-4CBD-BDA2-A6BF4623AF93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BFE019AB-E6F5-47A5-B7B8-8CF73789EEA2}
+	EndGlobalSection
+EndGlobal
