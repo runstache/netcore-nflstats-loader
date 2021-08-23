@@ -44,6 +44,13 @@ namespace NflStats.Loader.Helpers
             {
                 return result;
             }
+            else
+            {
+                if (DateTime.TryParse(value, out DateTime result2))
+                {
+                    return result2;
+                }
+            }
             return null;
         }
 

@@ -71,6 +71,13 @@ namespace NflStatsLoader.Test.Helpers
         [Test]
         public void ParseDateTimeNoFormatTest()
         {
+            var result = DataHelper.ParseDateTime("5/6/2020", "");
+            result.Should().Be(new DateTime(2020, 5, 6));
+        }
+
+        [Test]
+        public void ParseDateTimeNoFormatFailure()
+        {
             var result = DataHelper.ParseDateTime("20200506", "");
             result.Should().BeNull();
         }
