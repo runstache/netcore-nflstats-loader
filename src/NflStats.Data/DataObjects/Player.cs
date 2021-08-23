@@ -11,7 +11,7 @@ namespace NflStats.Data.DataObjects
         public long Id { get; set; }
         public string Url { get; set; }
         public string Name { get; set; }
-        public DateTime Dob { get; set; }
+        public DateTime? Dob { get; set; }
         public string Position { get; set; }
     }
 }

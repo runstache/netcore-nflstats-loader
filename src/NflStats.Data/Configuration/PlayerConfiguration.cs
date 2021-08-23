@@ -14,7 +14,7 @@ namespace NflStats.Data.Configuration
         {
             builder.ToTable("tblPlayers");
             builder.HasKey(c => c.Id);
-            builder.Property(c => c.Dob).IsRequired().HasColumnName("Dob").HasColumnType("date");
+            builder.Property(c => c.Dob).HasColumnName("Dob").HasColumnType("date");
             builder.Property(c => c.Url).IsRequired().HasColumnName("Url").HasColumnType("varchar(255)").HasMaxLength(255);
             builder.Property(c => c.Name).IsRequired().HasColumnName("Name").HasColumnType("varchar(500)").HasMaxLength(500);
             builder.Property(c => c.Id).IsRequired().HasColumnName("Id").HasColumnType("bigint").UseIdentityColumn();
