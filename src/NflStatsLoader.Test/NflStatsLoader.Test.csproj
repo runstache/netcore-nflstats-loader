@@ -21,8 +21,4 @@
     <ProjectReference Include="..\NflStats.Loader\NflStats.Loader.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Transformers\" />
-  </ItemGroup>
-
 </Project>
