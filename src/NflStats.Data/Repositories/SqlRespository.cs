@@ -73,6 +73,12 @@ namespace NflStats.Data.Repositories
             return result.Any();
         }
 
+        public bool Exists(Player player)
+        {
+            var result = base.Query<Player>(c => c.Url == player.Url);
+            return result.Any();
+        }
+
         public DefensiveStat GetDefensiveStat(long id)
         {
             return ctx.DefensiveStats.Where(c => c.Id == id).FirstOrDefault();
@@ -116,6 +122,21 @@ namespace NflStats.Data.Repositories
         public IQueryable<PassingStat> GetPassingStats(long playerId)
         {
             return base.Query<PassingStat>(c => c.PlayerId == playerId);
+        }
+
+        public Player GetPlayer(long id)
+        {
+            return ctx.Players.Where(c => c.Id == id).FirstOrDefault();
+        }
+
+        public Player GetPlayer(string url)
+        {
+            return ctx.Players.Where(c => c.Url == url).FirstOrDefault();
+        }
+
+        public IQueryable<Player> GetPlayers()
+        {
+            return ctx.Players;
         }
 
         public ReceivingStat GetReceivingStat(long id)
@@ -343,7 +364,26 @@ namespace NflStats.Data.Repositories
 
         public ReturnStat Save(ReturnStat stat)
         {
-            throw new System.NotImplementedException();
+            if (stat.Id > 0)
+            {
+                return base.Update(stat);
+            }
+            else
+            {
+                return base.Add(stat);
+            }
+        }
+
+        public Player Save(Player player)
+        {
+            if (player.Id > 0)
+            {
+                return base.Update(player);
+            }
+            else
+            {
+                return base.Add(player);
+            }
         }
     }
 }

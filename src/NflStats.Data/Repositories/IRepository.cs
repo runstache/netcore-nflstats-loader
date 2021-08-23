@@ -17,8 +17,8 @@ namespace NflStats.Data.Repositories
         Team Save(Team team);
         TeamStat Save(TeamStat stat);
         DataObjects.TypeCode Save(DataObjects.TypeCode code);
-
         ReturnStat Save(ReturnStat stat);
+        Player Save(Player player);
 
         #endregion
 
@@ -66,6 +66,10 @@ namespace NflStats.Data.Repositories
         IQueryable<ReturnStat> GetReturnStats();
         IQueryable<ReturnStat> GetReturnStats(long playerId);
 
+        Player GetPlayer(long id);
+        Player GetPlayer(string url);
+        IQueryable<Player> GetPlayers();
+
         #endregion
 
         #region Exists Methods
@@ -80,7 +84,7 @@ namespace NflStats.Data.Repositories
         bool Exists(TeamStat stat);
         bool Exists(DataObjects.TypeCode code);
         bool Exists(ReturnStat stat);
-
+        bool Exists(Player player);
         #endregion
 
     }
