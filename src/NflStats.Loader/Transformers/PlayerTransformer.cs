@@ -19,14 +19,14 @@ namespace NflStats.Loader.Transformers
                 Name = item.Name
             };
 
-            if (item.Bio.ContainsKey("Position"))
+            if (item.Bio.Any(c => c.Key.ToLower() == "position"))
             {
-                result.Position = item.Bio.GetValueOrDefault("Position");
+                result.Position = item.Bio.Where(c => c.Key.ToLower() == "position").FirstOrDefault().Value;
             }
 
-            if (item.Bio.ContainsKey("DOB"))
+            if (item.Bio.Any(c => c.Key.ToLower() == "dob"))
             {
-                string value = item.Bio.GetValueOrDefault("DOB");
+                string value = item.Bio.Where(c => c.Key.ToLower() == "dob").FirstOrDefault().Value;
                 string[] parts = value.Split(" ");
                 if (parts.Length > 1)
                 {

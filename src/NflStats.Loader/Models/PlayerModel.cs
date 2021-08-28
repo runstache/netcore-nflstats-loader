@@ -13,11 +13,11 @@ namespace NflStats.Loader.Models
 
         [JsonProperty(PropertyName = "bio")]
 
-        public Dictionary<string, string> Bio { get; set; }
+        public List<KeyValuePair<string, string>> Bio { get; set; }
 
         public PlayerModel()
         {
-            Bio = new Dictionary<string, string>();
+            Bio = new List<KeyValuePair<string, string>>();
         }
     }
 }
