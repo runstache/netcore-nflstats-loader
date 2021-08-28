@@ -13,7 +13,7 @@ namespace NflStats.Loader.Models
             PenaltyFirstDowns = new();
             ThirdDownEfficiency = new();
             FourthDownEfficiency = new();
-            DefensivePlays = new();
+            TotalPlays = new();
             TotalYards = new();
             TotalDrives = new();
             YardsPerPlay = new();
@@ -47,14 +47,14 @@ namespace NflStats.Loader.Models
         [JsonProperty(PropertyName = "penaltyFirstDowns")]
         public MatchupStatModel PenaltyFirstDowns { get; set; }
 
-        [JsonProperty(PropertyName = "thirdDownEfficieny")]
+        [JsonProperty(PropertyName = "thirdDownEfficiency")]
         public MatchupStatModel ThirdDownEfficiency { get; set; }
 
         [JsonProperty(PropertyName = "fourthDownEfficiency")]
         public MatchupStatModel FourthDownEfficiency { get; set; }
 
-        [JsonProperty(PropertyName = "defensivePlays")]
-        public MatchupStatModel DefensivePlays { get; set; }
+        [JsonProperty(PropertyName = "totalPlays")]
+        public MatchupStatModel TotalPlays { get; set; }
 
         [JsonProperty(PropertyName = "totalYards")]
         public MatchupStatModel TotalYards { get; set; }
