@@ -7,7 +7,7 @@ namespace NflStats.Data.Repositories
     public class SqlRespository : BaseRepository, IRepository
     {
         private readonly SqlContext ctx;
-        protected SqlRespository(SqlContext ctx) : base(ctx)
+        public SqlRespository(SqlContext ctx) : base(ctx)
         {
             this.ctx = ctx;
         }
@@ -19,22 +19,22 @@ namespace NflStats.Data.Repositories
 
         public bool Exists(KickingStat stat)
         {
-            return base.Query<DefensiveStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId).Any();
+            return base.Query<KickingStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId).Any();
         }
 
         public bool Exists(PassingStat stat)
         {
-            return base.Query<DefensiveStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId).Any();
+            return base.Query<PassingStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId).Any();
         }
 
         public bool Exists(ReceivingStat stat)
         {
-            return base.Query<DefensiveStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId).Any(); 
+            return base.Query<ReceivingStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId).Any(); 
         }
 
         public bool Exists(RushingStat stat)
         {
-            return base.Query<DefensiveStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId).Any();
+            return base.Query<RushingStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId).Any();
         }
 
         public bool Exists(ScheduleItem item)
@@ -52,9 +52,9 @@ namespace NflStats.Data.Repositories
             return base.Query<TeamStat>(c => c.TeamId == stat.TeamId && c.ScheduleId == stat.ScheduleId).Any();
         }
 
-        public bool Exists(DataObjects.TypeCode code)
+        public bool Exists(TypeCode code)
         {
-            return base.Query<DataObjects.TypeCode>(c => c.Code == code.Code).Any();
+            return base.Query<TypeCode>(c => c.Code == code.Code).Any();
         }
 
         public bool Exists(ReturnStat stat)
@@ -70,6 +70,11 @@ namespace NflStats.Data.Repositories
         public bool Exists(FumbleStat stat)
         {
             return base.Query<FumbleStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId).Any();
+        }
+
+        public bool Exists(InterceptionStat stat)
+        {
+            return base.Query<InterceptionStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId).Any();
         }
 
         public DefensiveStat GetDefensiveStat(long id)
@@ -100,6 +105,21 @@ namespace NflStats.Data.Repositories
         public IQueryable<FumbleStat> GetFumbleStats(long playerId)
         {
             return base.Query<FumbleStat>(c => c.PlayerId == playerId);
+        }
+
+        public InterceptionStat GetInterceptionStat(long id)
+        {
+            return base.Query<InterceptionStat>(c => c.Id == id).FirstOrDefault();
+        }
+
+        public IQueryable<InterceptionStat> GetInterceptionStats()
+        {
+            return ctx.Interceptions;
+        }
+
+        public IQueryable<InterceptionStat> GetInterceptionStats(long playerId)
+        {
+            return base.Query<InterceptionStat>(c => c.PlayerId == playerId);
         }
 
         public KickingStat GetKickingStat(long id)
@@ -264,7 +284,7 @@ namespace NflStats.Data.Repositories
 
         public DefensiveStat Save(DefensiveStat stat)
         {
-            if (stat.Id > 0)
+            if (stat.Id > 0 && Exists(stat))
             {
                 return base.Update(stat);
             }
@@ -276,7 +296,7 @@ namespace NflStats.Data.Repositories
 
         public KickingStat Save(KickingStat stat)
         {
-            if (stat.Id > 0)
+            if (stat.Id > 0 && Exists(stat))
             {
                 return base.Update(stat);
             }
@@ -288,7 +308,7 @@ namespace NflStats.Data.Repositories
 
         public PassingStat Save(PassingStat stat)
         {
-            if (stat.Id > 0)
+            if (stat.Id > 0 && Exists(stat))
             {
                 return base.Update(stat);
             }
@@ -300,7 +320,7 @@ namespace NflStats.Data.Repositories
 
         public ReceivingStat Save(ReceivingStat stat)
         {
-            if (stat.Id > 0)
+            if (stat.Id > 0 && Exists(stat))
             {
                 return base.Update(stat);
             }
@@ -312,7 +332,7 @@ namespace NflStats.Data.Repositories
 
         public RushingStat Save(RushingStat stat)
         {
-            if (stat.Id > 0)
+            if (stat.Id > 0 && Exists(stat))
             {
                 return base.Update(stat);
             }
@@ -324,7 +344,7 @@ namespace NflStats.Data.Repositories
 
         public ScheduleItem Save(ScheduleItem item)
         {
-            if (item.Id > 0)
+            if (item.Id > 0 && Exists(item))
             {
                 return base.Update(item);
             }
@@ -336,7 +356,7 @@ namespace NflStats.Data.Repositories
 
         public Team Save(Team team)
         {
-            if (team.Id > 0)
+            if (team.Id > 0 && Exists(team))
             {
                 return base.Update(team);
             }
@@ -348,7 +368,7 @@ namespace NflStats.Data.Repositories
 
         public TeamStat Save(TeamStat stat)
         {
-            if (stat.Id > 0)
+            if (stat.Id > 0 && Exists(stat))
             {
                 return base.Update(stat);
             }
@@ -360,7 +380,7 @@ namespace NflStats.Data.Repositories
 
         public TypeCode Save(DataObjects.TypeCode code)
         {
-            if (code.Id > 0)
+            if (code.Id > 0 && Exists(code))
             {
                 return base.Update(code);
             }
@@ -372,7 +392,7 @@ namespace NflStats.Data.Repositories
 
         public ReturnStat Save(ReturnStat stat)
         {
-            if (stat.Id > 0)
+            if (stat.Id > 0 && Exists(stat))
             {
                 return base.Update(stat);
             }
@@ -384,7 +404,7 @@ namespace NflStats.Data.Repositories
 
         public Player Save(Player player)
         {
-            if (player.Id > 0)
+            if (player.Id > 0 && Exists(player))
             {
                 return base.Update(player);
             }
@@ -396,7 +416,19 @@ namespace NflStats.Data.Repositories
 
         public FumbleStat Save(FumbleStat stat)
         {
-            if (stat.Id > 0)
+            if (stat.Id > 0 && Exists(stat))
+            {
+                return base.Update(stat);
+            }
+            else
+            {
+                return base.Add(stat);
+            }
+        }
+
+        public InterceptionStat Save(InterceptionStat stat)
+        {
+            if(stat.Id > 0 && Exists(stat))
             {
                 return base.Update(stat);
             }

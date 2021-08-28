@@ -13,7 +13,7 @@ namespace NflStats.Data.Configuration
     {
         public void Configure(EntityTypeBuilder<FumbleStat> builder)
         {
-            base.Configure(builder);
+            BasePlayerStatConfiguration.Configure(builder);
             builder.ToTable("tblFumbleStats");            
             builder.Property(c => c.Fumbles).IsRequired().HasColumnName("Fumbles").HasColumnType("int");
             builder.Property(c => c.FumblesLost).IsRequired().HasColumnName("FumblesLost").HasColumnType("int");

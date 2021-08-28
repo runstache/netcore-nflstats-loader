@@ -16,10 +16,11 @@ namespace NflStats.Data.Repositories
         ScheduleItem Save(ScheduleItem item);
         Team Save(Team team);
         TeamStat Save(TeamStat stat);
-        DataObjects.TypeCode Save(DataObjects.TypeCode code);
+        TypeCode Save(DataObjects.TypeCode code);
         ReturnStat Save(ReturnStat stat);
         Player Save(Player player);
         FumbleStat Save(FumbleStat stat);
+        InterceptionStat Save(InterceptionStat stat);
 
         #endregion
 
@@ -60,8 +61,8 @@ namespace NflStats.Data.Repositories
         IQueryable<TeamStat> GetTeamStats();
         IQueryable<TeamStat> GetTeamStats(int teamId);
 
-        DataObjects.TypeCode GetTypeCode(int id);
-        IQueryable<DataObjects.TypeCode> GetTypeCodes();
+        TypeCode GetTypeCode(int id);
+        IQueryable<TypeCode> GetTypeCodes();
 
         ReturnStat GetReturnStat(long id);
         IQueryable<ReturnStat> GetReturnStats();
@@ -75,6 +76,10 @@ namespace NflStats.Data.Repositories
         IQueryable<FumbleStat> GetFumbleStats();
         IQueryable<FumbleStat> GetFumbleStats(long playerId);
 
+        InterceptionStat GetInterceptionStat(long id);
+        IQueryable<InterceptionStat> GetInterceptionStats();
+        IQueryable<InterceptionStat> GetInterceptionStats(long playerId);
+
         #endregion
 
         #region Exists Methods
@@ -87,10 +92,11 @@ namespace NflStats.Data.Repositories
         bool Exists(ScheduleItem item);
         bool Exists(Team team);
         bool Exists(TeamStat stat);
-        bool Exists(DataObjects.TypeCode code);
+        bool Exists(TypeCode code);
         bool Exists(ReturnStat stat);
         bool Exists(Player player);
         bool Exists(FumbleStat stat);
+        bool Exists(InterceptionStat stat);
         #endregion
 
     }

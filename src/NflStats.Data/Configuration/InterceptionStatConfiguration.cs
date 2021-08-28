@@ -13,7 +13,7 @@ namespace NflStats.Data.Configuration
     {
         public void Configure(EntityTypeBuilder<InterceptionStat> builder)
         {
-            base.Configure(builder);
+            BasePlayerStatConfiguration.Configure(builder);
             builder.ToTable("tblInterceptionStats");
             builder.HasKey(c => c.Id);
             builder.Property(c => c.Interceptions).IsRequired().HasColumnName("Interceptions").HasColumnType("int");

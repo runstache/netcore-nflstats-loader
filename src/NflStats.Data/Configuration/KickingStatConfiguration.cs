@@ -8,7 +8,7 @@ namespace NflStats.Data.Configuration
     {
         public void Configure(EntityTypeBuilder<KickingStat> builder)
         {
-            base.Configure(builder);
+            BasePlayerStatConfiguration.Configure(builder);
             builder.ToTable("tblKickingStats");
             builder.Property(c => c.Attempts).IsRequired().HasColumnName("Attempts").HasColumnType("int");
             builder.Property(c => c.AveragePunt).IsRequired().HasColumnName("AveragePunt").HasColumnType("float");

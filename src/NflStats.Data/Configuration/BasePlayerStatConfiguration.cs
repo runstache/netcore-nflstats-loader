@@ -11,7 +11,7 @@ namespace NflStats.Data.Configuration
 {
     public class BasePlayerStatConfiguration : BaseStatConfiguration
     {
-        public new void Configure<TEntity>(EntityTypeBuilder<TEntity> builder) where TEntity : BasePlayerStat
+        public new static void Configure<TEntity>(EntityTypeBuilder<TEntity> builder) where TEntity : BasePlayerStat
         {
             BaseStatConfiguration.Configure(builder);
             builder.Property(c => c.PlayerId).IsRequired().HasColumnName("PlayerId").HasColumnType("bigint");
