@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace NflStats.Data.DataObjects
+﻿namespace NflStats.Data.DataObjects
 {
     public class FumbleStat : BasePlayerStat
     {
