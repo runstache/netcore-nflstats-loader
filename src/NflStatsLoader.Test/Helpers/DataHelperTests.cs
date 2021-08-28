@@ -113,7 +113,7 @@ namespace NflStatsLoader.Test.Helpers
         [Test]
         public void TestSplitLongNoIndex()
         {
-            var result = DataHelper.SplitDouble("2-6.8", "-", 2);
+            var result = DataHelper.SplitLong("2-6.8", "-", 2);
             result.Should().Be(0);
         }
 
@@ -121,6 +121,27 @@ namespace NflStatsLoader.Test.Helpers
         public void TestSplitDoubleNoIndex()
         {
             var result = DataHelper.SplitDouble("2-6.8", "-", 3);
+            result.Should().Be(0);
+        }
+
+        [Test]
+        public void TestSplitIntNullValue()
+        {
+            var result = DataHelper.SplitInteger(null, "-", 2);
+            result.Should().Be(0);
+        }
+
+        [Test]
+        public void TestSplitLongNullValue()
+        {
+            var result = DataHelper.SplitLong(null, "-", 2);
+            result.Should().Be(0);
+        }
+
+        [Test]
+        public void TestSplitDoubleNullValue()
+        {
+            var result = DataHelper.SplitDouble(null, "-", 3);
             result.Should().Be(0);
         }
     }

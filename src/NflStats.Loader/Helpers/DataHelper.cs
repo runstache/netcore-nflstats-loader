@@ -56,10 +56,13 @@ namespace NflStats.Loader.Helpers
 
         public static int SplitInteger(string value, string character, int index)
         {
-            string[] parts = value.Split(character);
-            if (parts.Length - 1 >= index)
+            if (!string.IsNullOrEmpty(value))
             {
-                return ParseInt(parts[index]);
+                string[] parts = value.Split(character);
+                if (parts.Length - 1 >= index)
+                {
+                    return ParseInt(parts[index]);
+                }
             }
             return 0;
 
@@ -67,20 +70,26 @@ namespace NflStats.Loader.Helpers
 
         public static long SplitLong(string value, string character, int index)
         {
-            string[] parts = value.Split(character);
-            if (parts.Length - 1 >= index)
+            if (!string.IsNullOrEmpty(value))
             {
-                return ParseLong(parts[index]);
+                string[] parts = value.Split(character);
+                if (parts.Length - 1 >= index)
+                {
+                    return ParseLong(parts[index]);
+                }
             }
             return 0;
         }
 
         public static double SplitDouble(string value, string character, int index)
         {
-            string[] parts = value.Split(character);
-            if (parts.Length - 1 >= index)
+            if (!string.IsNullOrEmpty(value))
             {
-                return ParseDouble(parts[index]);
+                string[] parts = value.Split(character);
+                if (parts.Length - 1 >= index)
+                {
+                    return ParseDouble(parts[index]);
+                }
             }
             return 0;
         }
