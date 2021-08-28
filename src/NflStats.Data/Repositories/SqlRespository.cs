@@ -77,6 +77,11 @@ namespace NflStats.Data.Repositories
             return base.Query<InterceptionStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId).Any();
         }
 
+        public bool Exists(ScoringStat stat)
+        {
+            return base.Query<ScoringStat>(c => c.ScheduleId == stat.ScheduleId && c.TeamId == stat.TeamId && c.Quarter == stat.Quarter).Any();
+        }
+
         public DefensiveStat GetDefensiveStat(long id)
         {
             return base.Query<DefensiveStat>(c => c.Id == id).FirstOrDefault();
@@ -235,6 +240,21 @@ namespace NflStats.Data.Repositories
         public IQueryable<ScheduleItem> GetScheduleItems(int teamId, int typeId, bool isHome)
         {
             return base.Query<ScheduleItem>(c => c.TeamId == teamId && c.TypeId == typeId && c.IsHome == isHome);
+        }
+
+        public ScoringStat GetScoringStat(long id)
+        {
+            return base.Query<ScoringStat>(c => c.Id == id).FirstOrDefault();
+        }
+
+        public IQueryable<ScoringStat> GetScoringStats()
+        {
+            return ctx.Scoring;
+        }
+
+        public IQueryable<ScoringStat> GetScoringStats(int teamId)
+        {
+            return base.Query<ScoringStat>(c => c.TeamId == teamId);
         }
 
         public Team GetTeam(int id)
@@ -429,6 +449,18 @@ namespace NflStats.Data.Repositories
         public InterceptionStat Save(InterceptionStat stat)
         {
             if(stat.Id > 0 && Exists(stat))
+            {
+                return base.Update(stat);
+            }
+            else
+            {
+                return base.Add(stat);
+            }
+        }
+
+        public ScoringStat Save(ScoringStat stat)
+        {
+            if (stat.Id > 0 && Exists(stat))
             {
                 return base.Update(stat);
             }

@@ -237,5 +237,30 @@ namespace NflStatsLoader.Test.Repositories
             result.Description.Should().Be("Home");
         }
 
+        [Test]
+        public void TestAddScoring()
+        {
+            var stat = new ScoringStat()
+            {
+                TeamId = 2,
+                Id = 1,
+                ScheduleId = 5,
+                Quarter = 1,
+                Points = 24
+
+            };
+            repo.Save(stat);
+
+            var result = repo.GetScoringStat(1);
+            result.Id.Should().Be(1);
+            result.TeamId.Should().Be(2);
+            result.ScheduleId.Should().Be(5);
+            result.Quarter.Should().Be(1);
+            result.Points.Should().Be(24);
+
+        }
+
     }
+
+
 }

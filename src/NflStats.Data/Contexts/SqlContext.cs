@@ -27,11 +27,12 @@ namespace NflStats.Data.Contexts
         public DbSet<ScheduleItem> ScheduleItems { get; set; }
         public DbSet<Team> Teams { get; set; }
         public DbSet<TeamStat> TeamStats { get; set; }
-        public DbSet<DataObjects.TypeCode> TypeCodes { get; set; }
+        public DbSet<TypeCode> TypeCodes { get; set; }
         public DbSet<ReturnStat> ReturnStats { get; set; }
         public DbSet<Player> Players { get; set; }
         public DbSet<FumbleStat> Fumbles { get; set; }
         public DbSet<InterceptionStat> Interceptions { get; set; }
+        public DbSet<ScoringStat> Scoring { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -58,6 +59,7 @@ namespace NflStats.Data.Contexts
             modelBuilder.ApplyConfiguration(new PlayerConfiguration());
             modelBuilder.ApplyConfiguration(new FumbleStatConfiguration());
             modelBuilder.ApplyConfiguration(new InterceptionStatConfiguration());
+            modelBuilder.ApplyConfiguration(new ScoringStatConfiguration());
         }
 
     }
