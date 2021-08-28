@@ -1,0 +1,158 @@
+{
+  "firstDowns": {
+    "home": "15",
+    "away": "31"
+  },
+  "passingFirstDowns": {
+    "home": "8",
+    "away": "17"
+  },
+  "rushingFirstDowns": {
+    "home": "4",
+    "away": "8"
+  },
+  "penaltyFirstDowns": {
+    "home": "3",
+    "away": "6"
+  },
+  "thirdDownEfficiency": {
+    "home": "4-11",
+    "away": "7-14"
+  },
+  "fourthDownEfficiency": {
+    "home": "0-0",
+    "away": "1-1"
+  },
+  "defesnsivePlays": {
+    "home": "53",
+    "away": "81"
+  },
+  "totalYards": {
+    "home": "254",
+    "away": "404"
+  },
+  "totalDrives": {
+    "home": "11",
+    "away": "11"
+  },
+  "yardsPerPlay": {
+    "home": "4.8",
+    "away": "5.0"
+  },
+  "totalPassingYards": {
+    "home": "202",
+    "away": "306"
+  },
+  "passingEfficiency": {
+    "home": "21-35",
+    "away": "33-46"
+  },
+  "yardsPerPass": {
+    "home": "5.3",
+    "away": "6.2"
+  },
+  "interceptionsThrown": {
+    "home": "1",
+    "away": "0"
+  },
+  "sacks": {
+    "home": "3-13",
+    "away": "3-6"
+  },
+  "rushingYards": {
+    "home": "52",
+    "away": "98"
+  },
+  "rushingAttempts": {
+    "home": "15",
+    "away": "32"
+  },
+  "yardsPerRush": {
+    "home": "3.5",
+    "away": "3.1"
+  },
+  "redZoneEfficiency": {
+    "home": "1-2",
+    "away": "3-8"
+  },
+  "penalties": {
+    "home": "9-95",
+    "away": "7-79"
+  },
+  "turnovers": {
+    "home": "2",
+    "away": "2"
+  },
+  "fumbles": {
+    "home": "1",
+    "away": "2"
+  },
+  "intereceptions": {
+    "home": "1",
+    "away": "0"
+  },
+  "defensiveTouchdowns": {
+    "home": "0",
+    "away": "0"
+  },
+  "possesionTime": {
+    "home": "18:43",
+    "away": "41:17"
+  },
+  "boxscore": [
+    {
+      "team": "NYJ",
+      "final": "17",
+      "quarters": [
+        {
+          "quarter": 1,
+          "points": "NYJ"
+        },
+        {
+          "quarter": 2,
+          "points": "0"
+        },
+        {
+          "quarter": 3,
+          "points": "3"
+        },
+        {
+          "quarter": 4,
+          "points": "7"
+        },
+        {
+          "quarter": 5,
+          "points": "7"
+        },
+        {}
+      ]
+    },
+    {
+      "team": "BUF",
+      "final": "27",
+      "quarters": [
+        {
+          "quarter": 1,
+          "points": "BUF"
+        },
+        {
+          "quarter": 2,
+          "points": "14"
+        },
+        {
+          "quarter": 3,
+          "points": "7"
+        },
+        {
+          "quarter": 4,
+          "points": "0"
+        },
+        {
+          "quarter": 5,
+          "points": "6"
+        },
+        {}
+      ]
+    }
+  ]
+}

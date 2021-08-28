@@ -22,4 +22,10 @@
     <ProjectReference Include="..\NflStats.Loader\NflStats.Loader.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="TestData\test-game.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

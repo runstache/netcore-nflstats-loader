@@ -1,0 +1,2136 @@
+{
+  "year": "2020",
+  "weekNumber": "1",
+  "type": "regular",
+  "awayteam": "nyj",
+  "hometeam": "buf",
+  "gameid": "401220116",
+  "boxscore": {
+    "homePassing": [
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3918298/josh-allen",
+          "name": "Josh Allen",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Quarterback"
+            },
+            {
+              "key": "DOB",
+              "value": "5/21/1996 (25)"
+            }
+          ]
+        },
+        "completions": "33",
+        "attempts": "46",
+        "sacks": "3",
+        "yards": "312",
+        "passingAverage": "6.8",
+        "touchdowns": "2",
+        "interceptions": "0",
+        "qbrating": "66.8",
+        "rating": "104.6"
+      }
+    ],
+    "awayPassing": [
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3912547/sam-darnold",
+          "name": "Sam Darnold",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Quarterback"
+            },
+            {
+              "key": "DOB",
+              "value": "6/5/1997 (24)"
+            }
+          ]
+        },
+        "completions": "21",
+        "attempts": "35",
+        "sacks": "3",
+        "yards": "215",
+        "passingAverage": "6.1",
+        "touchdowns": "1",
+        "interceptions": "1",
+        "qbrating": "19.9",
+        "rating": "75.3"
+      }
+    ],
+    "homeRushing": [
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3918298/josh-allen",
+          "name": "Josh Allen",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Quarterback"
+            },
+            {
+              "key": "DOB",
+              "value": "5/21/1996 (25)"
+            }
+          ]
+        },
+        "yards": "57",
+        "rushingAverage": "4.1",
+        "touchdowns": "1",
+        "carries": "14",
+        "longrush": "16"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/4040761/devin-singletary",
+          "name": "Devin Singletary",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Running Back"
+            },
+            {
+              "key": "DOB",
+              "value": "9/3/1997 (23)"
+            }
+          ]
+        },
+        "yards": "30",
+        "rushingAverage": "3.3",
+        "touchdowns": "0",
+        "carries": "9",
+        "longrush": "12"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/4035676/zack-moss",
+          "name": "Zack Moss",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Running Back"
+            },
+            {
+              "key": "DOB",
+              "value": "12/15/1997 (23)"
+            }
+          ]
+        },
+        "yards": "11",
+        "rushingAverage": "1.2",
+        "touchdowns": "0",
+        "carries": "9",
+        "longrush": "7"
+      }
+    ],
+    "awayRushing": [
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/8479/frank-gore",
+          "name": "Frank Gore",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Running Back"
+            },
+            {
+              "key": "DOB",
+              "value": "5/14/1983"
+            }
+          ]
+        },
+        "yards": "24",
+        "rushingAverage": "4.0",
+        "touchdowns": "0",
+        "carries": "6",
+        "longrush": "8"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/15825/leveon-bell",
+          "name": "Le&apos;Veon Bell",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Running Back"
+            },
+            {
+              "key": "DOB",
+              "value": "2/18/1992"
+            }
+          ]
+        },
+        "yards": "14",
+        "rushingAverage": "2.3",
+        "touchdowns": "0",
+        "carries": "6",
+        "longrush": "7"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3932420/josh-adams",
+          "name": "Josh Adams",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Running Back"
+            },
+            {
+              "key": "DOB",
+              "value": "10/29/1996 (24)"
+            }
+          ]
+        },
+        "yards": "8",
+        "rushingAverage": "4.0",
+        "touchdowns": "1",
+        "carries": "2",
+        "longrush": "6"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3912547/sam-darnold",
+          "name": "Sam Darnold",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Quarterback"
+            },
+            {
+              "key": "DOB",
+              "value": "6/5/1997 (24)"
+            }
+          ]
+        },
+        "yards": "6",
+        "rushingAverage": "6.0",
+        "touchdowns": "0",
+        "carries": "1",
+        "longrush": "6"
+      }
+    ],
+    "homeReceiving": [
+      {
+        "player": {
+          "url": "http://www.espn.com/nfl/player/_/id/2976212/stefon-diggs",
+          "name": "Stefon Diggs",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Wide Receiver"
+            },
+            {
+              "key": "DOB",
+              "value": "11/29/1993 (27)"
+            }
+          ]
+        },
+        "yards": "86",
+        "receivingAverage": "10.8",
+        "touchdowns": "0",
+        "receptions": "8",
+        "longrush": "22",
+        "targets": "9"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/16804/john-brown",
+          "name": "John Brown",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Wide Receiver"
+            },
+            {
+              "key": "DOB",
+              "value": "4/3/1990 (31)"
+            }
+          ]
+        },
+        "yards": "70",
+        "receivingAverage": "11.7",
+        "touchdowns": "1",
+        "receptions": "6",
+        "longrush": "20",
+        "targets": "10"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/15349/cole-beasley",
+          "name": "Cole Beasley",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Wide Receiver"
+            },
+            {
+              "key": "DOB",
+              "value": "4/26/1989 (32)"
+            }
+          ]
+        },
+        "yards": "58",
+        "receivingAverage": "14.5",
+        "touchdowns": "0",
+        "receptions": "4",
+        "longrush": "29",
+        "targets": "7"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3930086/dawson-knox",
+          "name": "Dawson Knox",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Tight End"
+            },
+            {
+              "key": "DOB",
+              "value": "11/14/1996 (24)"
+            }
+          ]
+        },
+        "yards": "26",
+        "receivingAverage": "13.0",
+        "touchdowns": "0",
+        "receptions": "2",
+        "longrush": "15",
+        "targets": "3"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/4040761/devin-singletary",
+          "name": "Devin Singletary",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Running Back"
+            },
+            {
+              "key": "DOB",
+              "value": "9/3/1997 (23)"
+            }
+          ]
+        },
+        "yards": "23",
+        "receivingAverage": "4.6",
+        "touchdowns": "0",
+        "receptions": "5",
+        "longrush": "9",
+        "targets": "7"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3128724/isaiah-mckenzie",
+          "name": "Isaiah McKenzie",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Wide Receiver"
+            },
+            {
+              "key": "DOB",
+              "value": "4/9/1995 (26)"
+            }
+          ]
+        },
+        "yards": "17",
+        "receivingAverage": "5.7",
+        "touchdowns": "0",
+        "receptions": "3",
+        "longrush": "10",
+        "targets": "3"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/4035676/zack-moss",
+          "name": "Zack Moss",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Running Back"
+            },
+            {
+              "key": "DOB",
+              "value": "12/15/1997 (23)"
+            }
+          ]
+        },
+        "yards": "16",
+        "receivingAverage": "5.3",
+        "touchdowns": "1",
+        "receptions": "3",
+        "longrush": "8",
+        "targets": "4"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/4243537/gabriel-davis",
+          "name": "Gabriel Davis",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Wide Receiver"
+            },
+            {
+              "key": "DOB",
+              "value": "4/1/1999 (22)"
+            }
+          ]
+        },
+        "yards": "16",
+        "receivingAverage": "8.0",
+        "touchdowns": "0",
+        "receptions": "2",
+        "longrush": "13",
+        "targets": "2"
+      }
+    ],
+    "awayReceiving": [
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/2576716/jamison-crowder",
+          "name": "Jamison Crowder",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Wide Receiver"
+            },
+            {
+              "key": "DOB",
+              "value": "6/17/1993 (28)"
+            }
+          ]
+        },
+        "yards": "115",
+        "receivingAverage": "16.4",
+        "touchdowns": "1",
+        "receptions": "7",
+        "longrush": "69",
+        "targets": "13"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3123050/chris-herndon",
+          "name": "Chris Herndon",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Tight End"
+            },
+            {
+              "key": "DOB",
+              "value": "2/23/1996 (25)"
+            }
+          ]
+        },
+        "yards": "37",
+        "receivingAverage": "6.2",
+        "touchdowns": "0",
+        "receptions": "6",
+        "longrush": "18",
+        "targets": "7"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/15825/leveon-bell",
+          "name": "Le&apos;Veon Bell",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Running Back"
+            },
+            {
+              "key": "DOB",
+              "value": "2/18/1992"
+            }
+          ]
+        },
+        "yards": "32",
+        "receivingAverage": "16.0",
+        "touchdowns": "0",
+        "receptions": "2",
+        "longrush": "30",
+        "targets": "2"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/2972460/breshad-perriman",
+          "name": "Breshad Perriman",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Wide Receiver"
+            },
+            {
+              "key": "DOB",
+              "value": "9/10/1993 (27)"
+            }
+          ]
+        },
+        "yards": "17",
+        "receivingAverage": "5.7",
+        "touchdowns": "0",
+        "receptions": "3",
+        "longrush": "13",
+        "targets": "5"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3932420/josh-adams",
+          "name": "Josh Adams",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Running Back"
+            },
+            {
+              "key": "DOB",
+              "value": "10/29/1996 (24)"
+            }
+          ]
+        },
+        "yards": "14",
+        "receivingAverage": "7.0",
+        "touchdowns": "0",
+        "receptions": "2",
+        "longrush": "7",
+        "targets": "2"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/14402/chris-hogan",
+          "name": "Chris Hogan",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Wide Receiver"
+            },
+            {
+              "key": "DOB",
+              "value": "10/24/1987 (33)"
+            }
+          ]
+        },
+        "yards": "0",
+        "receivingAverage": "0.0",
+        "touchdowns": "0",
+        "receptions": "1",
+        "longrush": "0",
+        "targets": "4"
+      }
+    ],
+    "homeFumbles": [
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3918298/josh-allen",
+          "name": "Josh Allen",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Quarterback"
+            },
+            {
+              "key": "DOB",
+              "value": "5/21/1996 (25)"
+            }
+          ]
+        },
+        "fumbles": "2",
+        "fumblesLost": "2",
+        "fumblesRecovered": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/13245/jerry-hughes",
+          "name": "Jerry Hughes",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Defensive End"
+            },
+            {
+              "key": "DOB",
+              "value": "8/31/1988 (32)"
+            }
+          ]
+        },
+        "fumbles": "0",
+        "fumblesLost": "0",
+        "fumblesRecovered": "1"
+      }
+    ],
+    "awayFumbles": [
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3123050/chris-herndon",
+          "name": "Chris Herndon",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Tight End"
+            },
+            {
+              "key": "DOB",
+              "value": "2/23/1996 (25)"
+            }
+          ]
+        },
+        "fumbles": "1",
+        "fumblesLost": "1",
+        "fumblesRecovered": "0"
+      },
+      {
+        "player": {
+          "url": "http://www.espn.com/nfl/player/_/id/16269/bradley-mcdougald",
+          "name": "Bradley McDougald",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Safety"
+            },
+            {
+              "key": "DOB",
+              "value": "11/15/1990 (30)"
+            }
+          ]
+        },
+        "fumbles": "0",
+        "fumblesLost": "0",
+        "fumblesRecovered": "1"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3052434/jordan-willis",
+          "name": "Jordan Willis",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Defensive End"
+            },
+            {
+              "key": "DOB",
+              "value": "5/2/1995 (26)"
+            }
+          ]
+        },
+        "fumbles": "0",
+        "fumblesLost": "0",
+        "fumblesRecovered": "1"
+      }
+    ],
+    "homeDefense": [
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3121003/taron-johnson",
+          "name": "Taron Johnson",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Cornerback"
+            },
+            {
+              "key": "DOB",
+              "value": "7/27/1996 (25)"
+            }
+          ]
+        },
+        "totalTackles": "5",
+        "soloTackles": "4",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "1"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/15964/aj-klein",
+          "name": "A.J. Klein",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Linebacker"
+            },
+            {
+              "key": "DOB",
+              "value": "7/30/1991 (30)"
+            }
+          ]
+        },
+        "totalTackles": "5",
+        "soloTackles": "3",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/15979/jordan-poyer",
+          "name": "Jordan Poyer",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Safety"
+            },
+            {
+              "key": "DOB",
+              "value": "4/25/1991 (30)"
+            }
+          ]
+        },
+        "totalTackles": "4",
+        "soloTackles": "4",
+        "sacks": "0",
+        "tacklesForLoss": "1",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3046287/matt-milano",
+          "name": "Matt Milano",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Linebacker"
+            },
+            {
+              "key": "DOB",
+              "value": "7/28/1994 (27)"
+            }
+          ]
+        },
+        "totalTackles": "4",
+        "soloTackles": "3",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "1"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/15960/micah-hyde",
+          "name": "Micah Hyde",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Safety"
+            },
+            {
+              "key": "DOB",
+              "value": "12/31/1990 (30)"
+            }
+          ]
+        },
+        "totalTackles": "4",
+        "soloTackles": "2",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3057899/justin-zimmer",
+          "name": "Justin Zimmer",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Defensive Tackle"
+            },
+            {
+              "key": "DOB",
+              "value": "10/23/1992 (28)"
+            }
+          ]
+        },
+        "totalTackles": "4",
+        "soloTackles": "2",
+        "sacks": "0",
+        "tacklesForLoss": "1.5",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "http://www.espn.com/nfl/player/_/id/4035232/tyrel-dodson",
+          "name": "Tyrel Dodson",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Linebacker"
+            },
+            {
+              "key": "DOB",
+              "value": "6/25/1998 (23)"
+            }
+          ]
+        },
+        "totalTackles": "4",
+        "soloTackles": "1",
+        "sacks": "1",
+        "tacklesForLoss": "1",
+        "qbHits": "1",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/14320/mario-addison",
+          "name": "Mario Addison",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Defensive End"
+            },
+            {
+              "key": "DOB",
+              "value": "9/6/1987 (33)"
+            }
+          ]
+        },
+        "totalTackles": "3",
+        "soloTackles": "3",
+        "sacks": "1",
+        "tacklesForLoss": "2",
+        "qbHits": "1",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3929950/tremaine-edmunds",
+          "name": "Tremaine Edmunds",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Linebacker"
+            },
+            {
+              "key": "DOB",
+              "value": "5/2/1998 (23)"
+            }
+          ]
+        },
+        "totalTackles": "3",
+        "soloTackles": "2",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/16751/trent-murphy",
+          "name": "Trent Murphy",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Defensive End"
+            },
+            {
+              "key": "DOB",
+              "value": "12/22/1990"
+            }
+          ]
+        },
+        "totalTackles": "2",
+        "soloTackles": "2",
+        "sacks": "1",
+        "tacklesForLoss": "1",
+        "qbHits": "1",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/13245/jerry-hughes",
+          "name": "Jerry Hughes",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Defensive End"
+            },
+            {
+              "key": "DOB",
+              "value": "8/31/1988 (32)"
+            }
+          ]
+        },
+        "totalTackles": "2",
+        "soloTackles": "2",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3133440/levi-wallace",
+          "name": "Levi Wallace",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Cornerback"
+            },
+            {
+              "key": "DOB",
+              "value": "6/12/1995 (26)"
+            }
+          ]
+        },
+        "totalTackles": "2",
+        "soloTackles": "2",
+        "sacks": "0",
+        "tacklesForLoss": "1",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/2519038/dean-marlowe",
+          "name": "Dean Marlowe",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Safety"
+            },
+            {
+              "key": "DOB",
+              "value": "7/25/1992 (28)"
+            }
+          ]
+        },
+        "totalTackles": "1",
+        "soloTackles": "1",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3051324/dion-dawkins",
+          "name": "Dion Dawkins",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Offensive Tackle"
+            },
+            {
+              "key": "DOB",
+              "value": "4/26/1994 (27)"
+            }
+          ]
+        },
+        "totalTackles": "1",
+        "soloTackles": "1",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "http://www.espn.com/nfl/player/_/id/3117255/harrison-phillips",
+          "name": "Harrison Phillips",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Defensive Tackle"
+            },
+            {
+              "key": "DOB",
+              "value": "1/25/1996 (25)"
+            }
+          ]
+        },
+        "totalTackles": "1",
+        "soloTackles": "1",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "1",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/4040761/devin-singletary",
+          "name": "Devin Singletary",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Running Back"
+            },
+            {
+              "key": "DOB",
+              "value": "9/3/1997 (23)"
+            }
+          ]
+        },
+        "totalTackles": "1",
+        "soloTackles": "1",
+        "sacks": "0",
+        "tacklesForLoss": "1",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/2577078/quinton-jefferson",
+          "name": "Quinton Jefferson",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Defensive Tackle"
+            },
+            {
+              "key": "DOB",
+              "value": "3/31/1993 (28)"
+            }
+          ]
+        },
+        "totalTackles": "1",
+        "soloTackles": "0",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/4039303/ed-oliver",
+          "name": "Ed Oliver",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Defensive Tackle"
+            },
+            {
+              "key": "DOB",
+              "value": "12/12/1997 (23)"
+            }
+          ]
+        },
+        "totalTackles": "1",
+        "soloTackles": "0",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "1",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3042717/tredavious-white",
+          "name": "Tre&apos;Davious White",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Cornerback"
+            },
+            {
+              "key": "DOB",
+              "value": "1/16/1995 (26)"
+            }
+          ]
+        },
+        "totalTackles": "0",
+        "soloTackles": "0",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "1"
+      }
+    ],
+    "awayDefense": [
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/2980110/marcus-maye",
+          "name": "Marcus Maye",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Safety"
+            },
+            {
+              "key": "DOB",
+              "value": "3/9/1993 (28)"
+            }
+          ]
+        },
+        "totalTackles": "10",
+        "soloTackles": "7",
+        "sacks": "2",
+        "tacklesForLoss": "2",
+        "qbHits": "2",
+        "touchdowns": "0",
+        "passesDefended": "2"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/2980115/brian-poole",
+          "name": "Brian Poole",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Cornerback"
+            },
+            {
+              "key": "DOB",
+              "value": "10/20/1992 (28)"
+            }
+          ]
+        },
+        "totalTackles": "9",
+        "soloTackles": "8",
+        "sacks": "1",
+        "tacklesForLoss": "1",
+        "qbHits": "1",
+        "touchdowns": "0",
+        "passesDefended": "1"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3870072/bless-austin",
+          "name": "Bless Austin",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Cornerback"
+            },
+            {
+              "key": "DOB",
+              "value": "7/19/1996 (25)"
+            }
+          ]
+        },
+        "totalTackles": "8",
+        "soloTackles": "7",
+        "sacks": "0",
+        "tacklesForLoss": "1",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "http://www.espn.com/nfl/player/_/id/16269/bradley-mcdougald",
+          "name": "Bradley McDougald",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Safety"
+            },
+            {
+              "key": "DOB",
+              "value": "11/15/1990 (30)"
+            }
+          ]
+        },
+        "totalTackles": "8",
+        "soloTackles": "6",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "1"
+      },
+      {
+        "player": {
+          "url": "http://www.espn.com/nfl/player/_/id/3059880/neville-hewitt",
+          "name": "Neville Hewitt",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Linebacker"
+            },
+            {
+              "key": "DOB",
+              "value": "4/6/1993 (28)"
+            }
+          ]
+        },
+        "totalTackles": "8",
+        "soloTackles": "3",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "1"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/2570996/harvey-langi",
+          "name": "Harvey Langi",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Linebacker"
+            },
+            {
+              "key": "DOB",
+              "value": "9/24/1992 (28)"
+            }
+          ]
+        },
+        "totalTackles": "6",
+        "soloTackles": "5",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "1"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/16948/pierre-desir",
+          "name": "Pierre Desir",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Cornerback"
+            },
+            {
+              "key": "DOB",
+              "value": "9/8/1990 (30)"
+            }
+          ]
+        },
+        "totalTackles": "6",
+        "soloTackles": "4",
+        "sacks": "0",
+        "tacklesForLoss": "0.5",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/2976259/nate-hairston",
+          "name": "Nate Hairston",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Cornerback"
+            },
+            {
+              "key": "DOB",
+              "value": "6/30/1994 (27)"
+            }
+          ]
+        },
+        "totalTackles": "5",
+        "soloTackles": "4",
+        "sacks": "0",
+        "tacklesForLoss": "1",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3052977/tarell-basham",
+          "name": "Tarell Basham",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Defensive End"
+            },
+            {
+              "key": "DOB",
+              "value": "3/18/1994 (27)"
+            }
+          ]
+        },
+        "totalTackles": "4",
+        "soloTackles": "4",
+        "sacks": "0",
+        "tacklesForLoss": "1",
+        "qbHits": "1",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3127273/frankie-luvu",
+          "name": "Frankie Luvu",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Linebacker"
+            },
+            {
+              "key": "DOB",
+              "value": "9/19/1996 (24)"
+            }
+          ]
+        },
+        "totalTackles": "4",
+        "soloTackles": "2",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3045172/folorunso-fatukasi",
+          "name": "Folorunso Fatukasi",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Defensive Tackle"
+            },
+            {
+              "key": "DOB",
+              "value": "3/4/1995 (26)"
+            }
+          ]
+        },
+        "totalTackles": "3",
+        "soloTackles": "2",
+        "sacks": "0",
+        "tacklesForLoss": "1",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/2517752/henry-anderson",
+          "name": "Henry Anderson",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Defensive End"
+            },
+            {
+              "key": "DOB",
+              "value": "8/3/1991 (29)"
+            }
+          ]
+        },
+        "totalTackles": "3",
+        "soloTackles": "1",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/4040982/quinnen-williams",
+          "name": "Quinnen Williams",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Defensive Tackle"
+            },
+            {
+              "key": "DOB",
+              "value": "12/20/1997 (23)"
+            }
+          ]
+        },
+        "totalTackles": "3",
+        "soloTackles": "0",
+        "sacks": "0",
+        "tacklesForLoss": "0.5",
+        "qbHits": "1",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/15887/ryan-griffin",
+          "name": "Ryan Griffin",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Tight End"
+            },
+            {
+              "key": "DOB",
+              "value": "1/11/1990 (31)"
+            }
+          ]
+        },
+        "totalTackles": "2",
+        "soloTackles": "1",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/12895/steve-mclendon",
+          "name": "Steve McLendon",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Defensive Tackle"
+            },
+            {
+              "key": "DOB",
+              "value": "1/3/1986 (35)"
+            }
+          ]
+        },
+        "totalTackles": "1",
+        "soloTackles": "1",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/2576716/jamison-crowder",
+          "name": "Jamison Crowder",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Wide Receiver"
+            },
+            {
+              "key": "DOB",
+              "value": "6/17/1993 (28)"
+            }
+          ]
+        },
+        "totalTackles": "1",
+        "soloTackles": "1",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/2579840/matthias-farley",
+          "name": "Matthias Farley",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Safety"
+            },
+            {
+              "key": "DOB",
+              "value": "7/15/1992 (29)"
+            }
+          ]
+        },
+        "totalTackles": "1",
+        "soloTackles": "1",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3858271/ashtyn-davis",
+          "name": "Ashtyn Davis",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Safety"
+            },
+            {
+              "key": "DOB",
+              "value": "10/10/1996 (24)"
+            }
+          ]
+        },
+        "totalTackles": "1",
+        "soloTackles": "1",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3886528/kyle-phillips",
+          "name": "Kyle Phillips",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Defensive End"
+            },
+            {
+              "key": "DOB",
+              "value": "5/5/1997 (24)"
+            }
+          ]
+        },
+        "totalTackles": "1",
+        "soloTackles": "1",
+        "sacks": "0",
+        "tacklesForLoss": "1",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/4240090/mekhi-becton",
+          "name": "Mekhi Becton",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Offensive Tackle"
+            },
+            {
+              "key": "DOB",
+              "value": "4/18/1999 (22)"
+            }
+          ]
+        },
+        "totalTackles": "1",
+        "soloTackles": "1",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "http://www.espn.com/nfl/player/_/id/2977647/jordan-jenkins",
+          "name": "Jordan Jenkins",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Defensive End"
+            },
+            {
+              "key": "DOB",
+              "value": "7/1/1994 (27)"
+            }
+          ]
+        },
+        "totalTackles": "1",
+        "soloTackles": "0",
+        "sacks": "0",
+        "tacklesForLoss": "0.5",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/2983155/thomas-hennessy",
+          "name": "Thomas Hennessy",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Long Snapper"
+            },
+            {
+              "key": "DOB",
+              "value": "6/11/1994 (27)"
+            }
+          ]
+        },
+        "totalTackles": "1",
+        "soloTackles": "0",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3728281/blake-cashman",
+          "name": "Blake Cashman",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Linebacker"
+            },
+            {
+              "key": "DOB",
+              "value": "5/10/1996 (25)"
+            }
+          ]
+        },
+        "totalTackles": "1",
+        "soloTackles": "0",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/4076951/nathan-shepherd",
+          "name": "Nathan Shepherd",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Defensive Tackle"
+            },
+            {
+              "key": "DOB",
+              "value": "10/9/1993 (27)"
+            }
+          ]
+        },
+        "totalTackles": "1",
+        "soloTackles": "0",
+        "sacks": "0",
+        "tacklesForLoss": "0",
+        "qbHits": "0",
+        "touchdowns": "0",
+        "passesDefended": "0"
+      }
+    ],
+    "homeInterceptions": [
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3046287/matt-milano",
+          "name": "Matt Milano",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Linebacker"
+            },
+            {
+              "key": "DOB",
+              "value": "7/28/1994 (27)"
+            }
+          ]
+        },
+        "interceptions": "1",
+        "yards": "0",
+        "touchdowns": "0"
+      }
+    ],
+    "awayInterceptions": [
+      {}
+    ],
+    "homeKickReturns": [
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/13226/andre-roberts",
+          "name": "Andre Roberts",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Wide Receiver"
+            },
+            {
+              "key": "DOB",
+              "value": "1/9/1988 (33)"
+            }
+          ]
+        },
+        "kickReturns": "1",
+        "yards": "31",
+        "averageReturn": "31.0",
+        "longReturn": "31",
+        "touchdowns": "0"
+      }
+    ],
+    "awayKickReturns": [
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3115330/josh-malone",
+          "name": "Josh Malone",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Wide Receiver"
+            },
+            {
+              "key": "DOB",
+              "value": "3/21/1996 (25)"
+            }
+          ]
+        },
+        "kickReturns": "1",
+        "yards": "16",
+        "averageReturn": "16.0",
+        "longReturn": "16",
+        "touchdowns": "0"
+      },
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3858271/ashtyn-davis",
+          "name": "Ashtyn Davis",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Safety"
+            },
+            {
+              "key": "DOB",
+              "value": "10/10/1996 (24)"
+            }
+          ]
+        },
+        "kickReturns": "1",
+        "yards": "16",
+        "averageReturn": "16.0",
+        "longReturn": "16",
+        "touchdowns": "0"
+      }
+    ],
+    "homePuntReturns": [
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/13226/andre-roberts",
+          "name": "Andre Roberts",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Wide Receiver"
+            },
+            {
+              "key": "DOB",
+              "value": "1/9/1988 (33)"
+            }
+          ]
+        },
+        "kickReturns": "5",
+        "yards": "68",
+        "averageReturn": "13.6",
+        "longReturn": "23",
+        "touchdowns": "0"
+      }
+    ],
+    "awayPuntReturns": [
+      {}
+    ],
+    "homeKicking": [
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/3917232/tyler-bass",
+          "name": "Tyler Bass",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Place Kicker"
+            },
+            {
+              "key": "DOB",
+              "value": "2/14/1997 (24)"
+            }
+          ]
+        },
+        "fieldGoalMade": "2",
+        "fieldGoalAttempts": "4",
+        "xpMade": "3",
+        "xpAttempted": "3",
+        "longFieldGoal": "22",
+        "points": "9"
+      }
+    ],
+    "awayKicking": [
+      {
+        "player": {
+          "url": "http://www.espn.com/nfl/player/_/id/2582139/sam-ficken",
+          "name": "Sam Ficken",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Place Kicker"
+            },
+            {
+              "key": "DOB",
+              "value": "12/14/1992 (28)"
+            }
+          ]
+        },
+        "fieldGoalMade": "1",
+        "fieldGoalAttempts": "1",
+        "xpMade": "2",
+        "xpAttempted": "2",
+        "longFieldGoal": "31",
+        "points": "5"
+      }
+    ],
+    "homePunting": [
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/4039396/corey-bojorquez",
+          "name": "Corey Bojorquez",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Punter"
+            },
+            {
+              "key": "DOB",
+              "value": "9/13/1996 (24)"
+            }
+          ]
+        },
+        "punts": "1",
+        "yards": "53",
+        "averagePunt": "53.0",
+        "insideTwenty": "0",
+        "longPunt": "53",
+        "touchbacks": "0"
+      }
+    ],
+    "awayPunting": [
+      {
+        "player": {
+          "url": "https://www.espn.com/nfl/player/_/id/4035239/braden-mann",
+          "name": "Braden Mann",
+          "bio": [
+            {
+              "key": "Position",
+              "value": "Punter"
+            },
+            {
+              "key": "DOB",
+              "value": "11/24/1997 (23)"
+            }
+          ]
+        },
+        "punts": "6",
+        "yards": "278",
+        "averagePunt": "46.3",
+        "insideTwenty": "0",
+        "longPunt": "58",
+        "touchbacks": "0"
+      }
+    ]
+  },
+  "matchup": {
+    "firstDowns": {
+      "home": "15",
+      "away": "31"
+    },
+    "passingFirstDowns": {
+      "home": "8",
+      "away": "17"
+    },
+    "rushingFirstDowns": {
+      "home": "4",
+      "away": "8"
+    },
+    "penaltyFirstDowns": {
+      "home": "3",
+      "away": "6"
+    },
+    "thirdDownEfficiency": {
+      "home": "4-11",
+      "away": "7-14"
+    },
+    "fourthDownEfficiency": {
+      "home": "0-0",
+      "away": "1-1"
+    },
+    "defesnsivePlays": {
+      "home": "53",
+      "away": "81"
+    },
+    "totalYards": {
+      "home": "254",
+      "away": "404"
+    },
+    "totalDrives": {
+      "home": "11",
+      "away": "11"
+    },
+    "yardsPerPlay": {
+      "home": "4.8",
+      "away": "5.0"
+    },
+    "totalPassingYards": {
+      "home": "202",
+      "away": "306"
+    },
+    "passingEfficiency": {
+      "home": "21-35",
+      "away": "33-46"
+    },
+    "yardsPerPass": {
+      "home": "5.3",
+      "away": "6.2"
+    },
+    "interceptionsThrown": {
+      "home": "1",
+      "away": "0"
+    },
+    "sacks": {
+      "home": "3-13",
+      "away": "3-6"
+    },
+    "rushingYards": {
+      "home": "52",
+      "away": "98"
+    },
+    "rushingAttempts": {
+      "home": "15",
+      "away": "32"
+    },
+    "yardsPerRush": {
+      "home": "3.5",
+      "away": "3.1"
+    },
+    "redZoneEfficiency": {
+      "home": "1-2",
+      "away": "3-8"
+    },
+    "penalties": {
+      "home": "9-95",
+      "away": "7-79"
+    },
+    "turnovers": {
+      "home": "2",
+      "away": "2"
+    },
+    "fumbles": {
+      "home": "1",
+      "away": "2"
+    },
+    "intereceptions": {
+      "home": "1",
+      "away": "0"
+    },
+    "defensiveTouchdowns": {
+      "home": "0",
+      "away": "0"
+    },
+    "possesionTime": {
+      "home": "18:43",
+      "away": "41:17"
+    },
+    "boxscore": [
+      {
+        "team": "NYJ",
+        "final": "17",
+        "quarters": [
+          {
+            "quarter": 1,
+            "points": "NYJ"
+          },
+          {
+            "quarter": 2,
+            "points": "0"
+          },
+          {
+            "quarter": 3,
+            "points": "3"
+          },
+          {
+            "quarter": 4,
+            "points": "7"
+          },
+          {
+            "quarter": 5,
+            "points": "7"
+          },
+          {}
+        ]
+      },
+      {
+        "team": "BUF",
+        "final": "27",
+        "quarters": [
+          {
+            "quarter": 1,
+            "points": "BUF"
+          },
+          {
+            "quarter": 2,
+            "points": "14"
+          },
+          {
+            "quarter": 3,
+            "points": "7"
+          },
+          {
+            "quarter": 4,
+            "points": "0"
+          },
+          {
+            "quarter": 5,
+            "points": "6"
+          },
+          {}
+        ]
+      }
+    ]
+  },
+  "bigplays": [
+    {
+      "team": "nyj",
+      "pass": 0,
+      "run": 0,
+      "turnover": 0
+    },
+    {
+      "team": "buf",
+      "pass": 0,
+      "run": 1,
+      "turnover": 0
+    },
+    {
+      "team": "nyj",
+      "pass": 0,
+      "run": 0,
+      "turnover": 0
+    },
+    {
+      "team": "buf",
+      "pass": 1,
+      "run": 0,
+      "turnover": 0
+    },
+    {
+      "team": "nyj",
+      "pass": 0,
+      "run": 0,
+      "turnover": 0
+    },
+    {
+      "team": "buf",
+      "pass": 1,
+      "run": 1,
+      "turnover": 0
+    },
+    {
+      "team": "nyj",
+      "pass": 0,
+      "run": 0,
+      "turnover": 0
+    },
+    {
+      "team": "buf",
+      "pass": 0,
+      "run": 0,
+      "turnover": 0
+    },
+    {
+      "team": "nyj",
+      "pass": 0,
+      "run": 0,
+      "turnover": 0
+    },
+    {
+      "team": "buf",
+      "pass": 0,
+      "run": 0,
+      "turnover": 0
+    },
+    {
+      "team": "nyj",
+      "pass": 2,
+      "run": 0,
+      "turnover": 0
+    },
+    {
+      "team": "",
+      "pass": 0,
+      "run": 0,
+      "turnover": 0
+    },
+    {
+      "team": "buf",
+      "pass": 0,
+      "run": 0,
+      "turnover": 0
+    },
+    {
+      "team": "nyj",
+      "pass": 0,
+      "run": 0,
+      "turnover": 0
+    },
+    {
+      "team": "buf",
+      "pass": 1,
+      "run": 0,
+      "turnover": 1
+    },
+    {
+      "team": "nyj",
+      "pass": 0,
+      "run": 0,
+      "turnover": 0
+    },
+    {
+      "team": "buf",
+      "pass": 0,
+      "run": 1,
+      "turnover": 1
+    },
+    {
+      "team": "nyj",
+      "pass": 0,
+      "run": 0,
+      "turnover": 0
+    },
+    {
+      "team": "buf",
+      "pass": 0,
+      "run": 0,
+      "turnover": 0
+    },
+    {
+      "team": "nyj",
+      "pass": 0,
+      "run": 0,
+      "turnover": 0
+    },
+    {
+      "team": "buf",
+      "pass": 1,
+      "run": 0,
+      "turnover": 0
+    },
+    {
+      "team": "nyj",
+      "pass": 1,
+      "run": 0,
+      "turnover": 0
+    },
+    {
+      "team": "buf",
+      "pass": 0,
+      "run": 0,
+      "turnover": 0
+    },
+    {
+      "team": "",
+      "pass": 0,
+      "run": 0,
+      "turnover": 0
+    }
+  ]
+}

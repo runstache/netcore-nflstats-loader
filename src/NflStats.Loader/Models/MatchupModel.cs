@@ -1,9 +1,40 @@
 ﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace NflStats.Loader.Models
 {
     public class MatchupModel
     {
+        public MatchupModel()
+        {
+            FirstDowns = new();
+            PassingFirstDowns = new();
+            RushingFirstDowns = new();
+            PenaltyFirstDowns = new();
+            ThirdDownEfficiency = new();
+            FourthDownEfficiency = new();
+            DefensivePlays = new();
+            TotalYards = new();
+            TotalDrives = new();
+            YardsPerPlay = new();
+            TotalPassingYards = new();
+            PassingEfficiency = new();
+            YardsPerPass = new();
+            InterceptionsThrown = new();
+            Sacks = new();
+            RushingYards = new();
+            RushingAttempts = new();
+            YardsPerRush = new();
+            RedZoneEfficiency = new();
+            Penalties = new();
+            Turnovers = new();
+            Fumbles = new();
+            Interceptions = new();
+            DefensiveTouchdowns = new();
+            PossessionTime = new();
+            Boxscore = new();
+        }
+
         [JsonProperty(PropertyName = "firstDowns")]
         public MatchupStatModel FirstDowns { get; set; }
 
@@ -78,5 +109,10 @@ namespace NflStats.Loader.Models
 
         [JsonProperty(PropertyName = "possesionTime")]
         public MatchupStatModel PossessionTime { get; set; }
+
+        [JsonProperty(PropertyName = "boxscore")]
+        public List<ScoringModel> Boxscore { get; set; }
+
+ 
     }
 }

@@ -1,91 +1,92 @@
-﻿using Newtonsoft.Json;
+﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 namespace NflStats.Loader.Models
 {
     public class BoxscoreModel
     {
         public BoxscoreModel()
         {
-            HomePassing = new PassingModel();
-            AwayPassing = new PassingModel();
-            HomeRushing = new RushingModel();
-            AwayRushing = new RushingModel();
-            HomeReceiving = new ReceivingModel();
-            AwayReceiving = new ReceivingModel();
-            HomeFumbles = new FumbleModel();
-            AwayFumbles = new FumbleModel();
-            HomeDefense = new DefenseModel();
-            AwayDefense = new DefenseModel();
-            HomeInterceptions = new InterceptionModel();
-            AwayInterceptions = new InterceptionModel();
-            HomeKickReturns = new ReturnModel();
-            AwayKickReturns = new ReturnModel();
-            HomePuntReturns = new ReturnModel();
-            AwayPuntReturns = new ReturnModel();
-            HomeKicking = new KickingModel();
-            AwayKicking = new KickingModel();
-            HomePunting = new PuntingModel();
-            AwayPunting = new PuntingModel();
+            HomePassing = new();
+            AwayPassing = new();
+            HomeRushing = new(); 
+            AwayRushing = new();
+            HomeReceiving = new();
+            AwayReceiving = new();
+            HomeFumbles = new();
+            AwayFumbles = new();
+            HomeDefense = new();
+            AwayDefense = new();
+            HomeInterceptions = new();
+            AwayInterceptions = new();
+            HomeKickReturns = new();
+            AwayKickReturns = new();
+            HomePuntReturns = new();
+            AwayPuntReturns = new();
+            HomeKicking = new();
+            AwayKicking = new();
+            HomePunting = new();
+            AwayPunting = new();
         }
 
         [JsonProperty(PropertyName = "homePassing")]
-        public PassingModel HomePassing { get; set; }
+        public List<PassingModel> HomePassing { get; set; }
 
         [JsonProperty(PropertyName = "awayPassing")]
-        public PassingModel AwayPassing { get; set; }
+        public List<PassingModel> AwayPassing { get; set; }
 
         [JsonProperty(PropertyName = "homeRushing")]
-        public RushingModel HomeRushing { get; set; }
+        public List<RushingModel> HomeRushing { get; set; }
 
         [JsonProperty(PropertyName = "awayRushing")]
-        public RushingModel AwayRushing { get; set; }
+        public List<RushingModel> AwayRushing { get; set; }
 
         [JsonProperty(PropertyName = "homeReceiving")]
-        public ReceivingModel HomeReceiving { get; set; }
+        public List<ReceivingModel> HomeReceiving { get; set; }
 
         [JsonProperty(PropertyName = "awayReceiving")]
-        public ReceivingModel AwayReceiving { get; set; }
+        public List<ReceivingModel> AwayReceiving { get; set; }
 
         [JsonProperty(PropertyName = "homeFumbles")]
-        public FumbleModel HomeFumbles { get; set; }
+        public List<FumbleModel> HomeFumbles { get; set; }
 
         [JsonProperty(PropertyName = "awayFumbles")]
-        public FumbleModel AwayFumbles { get; set; }
+        public List<FumbleModel> AwayFumbles { get; set; }
 
         [JsonProperty(PropertyName = "homeDefense")]
-        public DefenseModel HomeDefense { get; set; }
+        public List<DefenseModel> HomeDefense { get; set; }
 
         [JsonProperty(PropertyName = "awayDefense")]
-        public DefenseModel AwayDefense { get; set; }
+        public List<DefenseModel> AwayDefense { get; set; }
 
         [JsonProperty(PropertyName = "homeInterceptions")]
-        public InterceptionModel HomeInterceptions { get; set; }
+        public List<InterceptionModel> HomeInterceptions { get; set; }
 
         [JsonProperty(PropertyName = "awayInterceptions")]
-        public InterceptionModel AwayInterceptions { get; set; }
+        public List<InterceptionModel> AwayInterceptions { get; set; }
 
         [JsonProperty(PropertyName = "homeKickReturns")]
-        public ReturnModel HomeKickReturns { get; set; }
+        public List<ReturnModel> HomeKickReturns { get; set; }
 
         [JsonProperty(PropertyName = "awayKickReturns")]
-        public ReturnModel AwayKickReturns { get; set; }
+        public List<ReturnModel> AwayKickReturns { get; set; }
 
         [JsonProperty(PropertyName = "homePuntReturns")]
-        public ReturnModel HomePuntReturns { get; set; }
+        public List<ReturnModel> HomePuntReturns { get; set; }
 
         [JsonProperty(PropertyName = "awayPuntReturns")]
-        public ReturnModel AwayPuntReturns { get; set; }
+        public List<ReturnModel> AwayPuntReturns { get; set; }
 
         [JsonProperty(PropertyName = "homeKicking")]
-        public KickingModel HomeKicking { get; set; }
+        public List<KickingModel> HomeKicking { get; set; }
 
         [JsonProperty(PropertyName = "awayKicking")]
-        public KickingModel AwayKicking { get; set; }
+        public List<KickingModel> AwayKicking { get; set; }
 
         [JsonProperty(PropertyName = "homePunting")]
-        public PuntingModel HomePunting { get; set; }
+        public List<PuntingModel> HomePunting { get; set; }
 
         [JsonProperty(PropertyName = "awayPunting")]
-        public PuntingModel AwayPunting { get; set; }
+        public List<PuntingModel> AwayPunting { get; set; }
 
 
 
