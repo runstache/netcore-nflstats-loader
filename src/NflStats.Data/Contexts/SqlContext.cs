@@ -30,6 +30,7 @@ namespace NflStats.Data.Contexts
         public DbSet<DataObjects.TypeCode> TypeCodes { get; set; }
         public DbSet<ReturnStat> ReturnStats { get; set; }
         public DbSet<Player> Players { get; set; }
+        public DbSet<FumbleStat> Fumbles { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -54,6 +55,7 @@ namespace NflStats.Data.Contexts
             modelBuilder.ApplyConfiguration(new TypeCodeConfiguration());
             modelBuilder.ApplyConfiguration(new ReturnStatConfiguration());
             modelBuilder.ApplyConfiguration(new PlayerConfiguration());
+            modelBuilder.ApplyConfiguration(new FumbleStatConfiguration());
         }
 
     }

@@ -14,74 +14,67 @@ namespace NflStats.Data.Repositories
 
         public bool Exists(DefensiveStat stat)
         {
-            var result = base.Query<DefensiveStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId);
-            return result.Any();
+            return base.Query<DefensiveStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId).Any();
         }
 
         public bool Exists(KickingStat stat)
         {
-            var result = base.Query<DefensiveStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId);
-            return result.Any();
+            return base.Query<DefensiveStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId).Any();
         }
 
         public bool Exists(PassingStat stat)
         {
-            var result = base.Query<DefensiveStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId);
-            return result.Any();
+            return base.Query<DefensiveStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId).Any();
         }
 
         public bool Exists(ReceivingStat stat)
         {
-            var result = base.Query<DefensiveStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId);
-            return result.Any();
+            return base.Query<DefensiveStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId).Any(); 
         }
 
         public bool Exists(RushingStat stat)
         {
-            var result = base.Query<DefensiveStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId);
-            return result.Any();
+            return base.Query<DefensiveStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId).Any();
         }
 
         public bool Exists(ScheduleItem item)
         {
-            var result = base.Query<ScheduleItem>(c => c.TeamId == item.TeamId && c.OpponentId == item.OpponentId && c.GameId == item.GameId);
-            return result.Any();
-
+            return base.Query<ScheduleItem>(c => c.TeamId == item.TeamId && c.OpponentId == item.OpponentId && c.GameId == item.GameId).Any();
         }
 
         public bool Exists(Team team)
         {
-            var result = base.Query<Team>(c => c.Code == team.Code);
-            return result.Any();
+            return base.Query<Team>(c => c.Code == team.Code).Any();
         }
 
         public bool Exists(TeamStat stat)
         {
-            var result = base.Query<TeamStat>(c => c.TeamId == stat.TeamId && c.ScheduleId == stat.ScheduleId);
-            return result.Any();
+            return base.Query<TeamStat>(c => c.TeamId == stat.TeamId && c.ScheduleId == stat.ScheduleId).Any();
         }
 
         public bool Exists(DataObjects.TypeCode code)
         {
-            var result = base.Query<DataObjects.TypeCode>(c => c.Code == code.Code);
-            return result.Any();
+            return base.Query<DataObjects.TypeCode>(c => c.Code == code.Code).Any();
         }
 
         public bool Exists(ReturnStat stat)
         {
-            var result = base.Query<ReturnStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId);
-            return result.Any();
+            return base.Query<ReturnStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId).Any();
         }
 
         public bool Exists(Player player)
         {
-            var result = base.Query<Player>(c => c.Url == player.Url);
-            return result.Any();
+            return base.Query<Player>(c => c.Url == player.Url).Any();
+        }
+
+        public bool Exists(FumbleStat stat)
+        {
+            return base.Query<FumbleStat>(c => c.PlayerId == stat.PlayerId && c.ScheduleId == stat.ScheduleId).Any();
         }
 
         public DefensiveStat GetDefensiveStat(long id)
         {
-            return ctx.DefensiveStats.Where(c => c.Id == id).FirstOrDefault();
+            return base.Query<DefensiveStat>(c => c.Id == id).FirstOrDefault();
         }
 
         public IQueryable<DefensiveStat> GetDefensiveStats()
@@ -94,9 +87,24 @@ namespace NflStats.Data.Repositories
             return base.Query<DefensiveStat>(c => c.PlayerId == playerId);
         }
 
+        public FumbleStat GetFumbleStat(long id)
+        {
+            return base.Query<FumbleStat>(c => c.Id == id).FirstOrDefault();
+        }
+
+        public IQueryable<FumbleStat> GetFumbleStats()
+        {
+            return ctx.Fumbles;
+        }
+
+        public IQueryable<FumbleStat> GetFumbleStats(long playerId)
+        {
+            return base.Query<FumbleStat>(c => c.PlayerId == playerId);
+        }
+
         public KickingStat GetKickingStat(long id)
         {
-            return ctx.KickingStats.Where(c => c.Id == id).FirstOrDefault();
+            return base.Query<KickingStat>(c => c.Id == id).FirstOrDefault();
         }
 
         public IQueryable<KickingStat> GetKickingStats()
@@ -111,7 +119,7 @@ namespace NflStats.Data.Repositories
 
         public PassingStat GetPassingStat(long id)
         {
-            return ctx.PassingStats.Where(c => c.Id == id).FirstOrDefault();
+            return base.Query<PassingStat>(c => c.Id == id).FirstOrDefault();
         }
 
         public IQueryable<PassingStat> GetPassingStats()
@@ -126,12 +134,12 @@ namespace NflStats.Data.Repositories
 
         public Player GetPlayer(long id)
         {
-            return ctx.Players.Where(c => c.Id == id).FirstOrDefault();
+            return base.Query<Player>(c => c.Id == id).FirstOrDefault();
         }
 
         public Player GetPlayer(string url)
         {
-            return ctx.Players.Where(c => c.Url == url).FirstOrDefault();
+            return base.Query<Player>(c => c.Url == url).FirstOrDefault();
         }
 
         public IQueryable<Player> GetPlayers()
@@ -141,7 +149,7 @@ namespace NflStats.Data.Repositories
 
         public ReceivingStat GetReceivingStat(long id)
         {
-            return ctx.ReceivingStats.Where(c => c.Id == id).FirstOrDefault();
+            return base.Query<ReceivingStat>(c => c.Id == id).FirstOrDefault();
         }
 
         public IQueryable<ReceivingStat> GetReceivingStats()
@@ -156,7 +164,7 @@ namespace NflStats.Data.Repositories
 
         public ReturnStat GetReturnStat(long id)
         {
-            return ctx.ReturnStats.Where(c => c.Id == id).FirstOrDefault();
+            return base.Query<ReturnStat>(c => c.Id == id).FirstOrDefault();
         }
 
         public IQueryable<ReturnStat> GetReturnStats()
@@ -171,7 +179,7 @@ namespace NflStats.Data.Repositories
 
         public RushingStat GetRushingStat(long id)
         {
-            return ctx.RushingStats.Where(c => c.Id == id).FirstOrDefault();
+            return base.Query<RushingStat>(c => c.Id == id).FirstOrDefault();
         }
 
         public IQueryable<RushingStat> GetRushingStats()
@@ -186,7 +194,7 @@ namespace NflStats.Data.Repositories
 
         public ScheduleItem GetScheduleItem(long id)
         {
-            return ctx.ScheduleItems.Where(c => c.Id == id).FirstOrDefault();
+            return base.Query<ScheduleItem>(c => c.Id == id).FirstOrDefault();
         }
 
         public IQueryable<ScheduleItem> GetScheduleItems(int teamId)
@@ -211,12 +219,12 @@ namespace NflStats.Data.Repositories
 
         public Team GetTeam(int id)
         {
-            return ctx.Teams.Where(c => c.Id == id).FirstOrDefault();
+            return base.Query<Team>(c => c.Id == id).FirstOrDefault();
         }
 
         public Team GetTeam(string code)
         {
-            return ctx.Teams.Where(c => c.Code == code).FirstOrDefault();
+            return base.Query<Team>(c => c.Code == code).FirstOrDefault();
         }
 
         public IQueryable<Team> GetTeams()
@@ -226,12 +234,12 @@ namespace NflStats.Data.Repositories
 
         public TeamStat GetTeamStat(long id)
         {
-            return ctx.TeamStats.Where(c => c.Id == id).FirstOrDefault();
+            return base.Query<TeamStat>(c => c.Id == id).FirstOrDefault();
         }
 
         public TeamStat GetTeamStat(int teamId, long scheduleId)
         {
-            return ctx.TeamStats.Where(c => c.TeamId == teamId && c.ScheduleId == scheduleId).FirstOrDefault();
+            return base.Query<TeamStat>(c => c.TeamId == teamId && c.ScheduleId == scheduleId).FirstOrDefault();
         }
 
         public IQueryable<TeamStat> GetTeamStats()
@@ -244,12 +252,12 @@ namespace NflStats.Data.Repositories
             return base.Query<TeamStat>(c => c.TeamId == teamId);
         }
 
-        public DataObjects.TypeCode GetTypeCode(int id)
+        public TypeCode GetTypeCode(int id)
         {
-            return ctx.TypeCodes.Where(c => c.Id == id).FirstOrDefault();
+            return base.Query<TypeCode>(c => c.Id == id).FirstOrDefault();
         }
 
-        public IQueryable<DataObjects.TypeCode> GetTypeCodes()
+        public IQueryable<TypeCode> GetTypeCodes()
         {
             return ctx.TypeCodes;
         }        
@@ -350,7 +358,7 @@ namespace NflStats.Data.Repositories
             }
         }
 
-        public DataObjects.TypeCode Save(DataObjects.TypeCode code)
+        public TypeCode Save(DataObjects.TypeCode code)
         {
             if (code.Id > 0)
             {
@@ -383,6 +391,18 @@ namespace NflStats.Data.Repositories
             else
             {
                 return base.Add(player);
+            }
+        }
+
+        public FumbleStat Save(FumbleStat stat)
+        {
+            if (stat.Id > 0)
+            {
+                return base.Update(stat);
+            }
+            else
+            {
+                return base.Add(stat);
             }
         }
     }

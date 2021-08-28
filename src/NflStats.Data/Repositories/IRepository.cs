@@ -19,6 +19,7 @@ namespace NflStats.Data.Repositories
         DataObjects.TypeCode Save(DataObjects.TypeCode code);
         ReturnStat Save(ReturnStat stat);
         Player Save(Player player);
+        FumbleStat Save(FumbleStat stat);
 
         #endregion
 
@@ -70,6 +71,10 @@ namespace NflStats.Data.Repositories
         Player GetPlayer(string url);
         IQueryable<Player> GetPlayers();
 
+        FumbleStat GetFumbleStat(long id);
+        IQueryable<FumbleStat> GetFumbleStats();
+        IQueryable<FumbleStat> GetFumbleStats(long playerId);
+
         #endregion
 
         #region Exists Methods
@@ -85,6 +90,7 @@ namespace NflStats.Data.Repositories
         bool Exists(DataObjects.TypeCode code);
         bool Exists(ReturnStat stat);
         bool Exists(Player player);
+        bool Exists(FumbleStat stat);
         #endregion
 
     }
