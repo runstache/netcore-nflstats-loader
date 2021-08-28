@@ -39,6 +39,10 @@ namespace NflStats.Data.Configuration
             builder.Property(c => c.YardsPerPass).IsRequired().HasColumnName("YardsPerPass").HasColumnType("float");
             builder.Property(c => c.YardsPerPlay).IsRequired().HasColumnName("YardsPerPlay").HasColumnType("float");
             builder.Property(c => c.YardsPerRush).IsRequired().HasColumnName("YardsPerRush").HasColumnType("float");
+            builder.Property(c => c.Penalties).IsRequired().HasColumnName("Penalties").HasColumnType("int");
+            builder.Property(c => c.PenaltyYards).IsRequired().HasColumnName("PenaltyYards").HasColumnType("int");
+            builder.Property(c => c.Sacks).IsRequired().HasColumnName("Sacks").HasColumnType("int");
+            builder.Property(c => c.SackYardsLost).IsRequired().HasColumnName("SackYardsLost").HasColumnType("int");
         }
     }
 }

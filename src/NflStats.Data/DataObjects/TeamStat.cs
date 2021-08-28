@@ -31,6 +31,10 @@
         public long TimeOfPossession { get; set; }
         public int PointsScored { get; set; }
         public int PointsAllowed { get; set; }
+        public int Penalties { get; set; }
+        public int PenaltyYards { get; set; }
+        public int Sacks { get; set; }
+        public int SackYardsLost { get; set; }
 
     }
 }
