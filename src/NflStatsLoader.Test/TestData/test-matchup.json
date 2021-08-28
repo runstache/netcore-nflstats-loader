@@ -23,7 +23,7 @@
     "home": "0-0",
     "away": "1-1"
   },
-  "defesnsivePlays": {
+  "totalPlays": {
     "home": "53",
     "away": "81"
   },
@@ -87,13 +87,13 @@
     "home": "1",
     "away": "2"
   },
-  "intereceptions": {
+  "interceptions": {
     "home": "1",
     "away": "0"
   },
   "defensiveTouchdowns": {
     "home": "0",
-    "away": "0"
+    "away": "1"
   },
   "possesionTime": {
     "home": "18:43",
