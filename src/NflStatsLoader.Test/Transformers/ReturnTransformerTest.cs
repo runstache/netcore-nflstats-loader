@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FluentAssertions;
+using Newtonsoft.Json;
 using NflStats.Data.DataObjects;
 using NflStats.Loader.Models;
 using NflStats.Loader.Transformers;
-using Newtonsoft.Json;
 using NUnit.Framework;
-using FluentAssertions;
 
 namespace NflStatsLoader.Test.Transformers
 {
