@@ -54,5 +54,36 @@ namespace NflStats.Loader.Helpers
             return null;
         }
 
+        public static int SplitInteger(string value, string character, int index)
+        {
+            string[] parts = value.Split(character);
+            if (parts.Length - 1 >= index)
+            {
+                return ParseInt(parts[index]);
+            }
+            return 0;
+
+        }
+
+        public static long SplitLong(string value, string character, int index)
+        {
+            string[] parts = value.Split(character);
+            if (parts.Length - 1 >= index)
+            {
+                return ParseLong(parts[index]);
+            }
+            return 0;
+        }
+
+        public static double SplitDouble(string value, string character, int index)
+        {
+            string[] parts = value.Split(character);
+            if (parts.Length - 1 >= index)
+            {
+                return ParseDouble(parts[index]);
+            }
+            return 0;
+        }
+
     }
 }

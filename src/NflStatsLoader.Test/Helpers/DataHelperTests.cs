@@ -81,5 +81,47 @@ namespace NflStatsLoader.Test.Helpers
             var result = DataHelper.ParseDateTime("20200506", "");
             result.Should().BeNull();
         }
+
+        [Test]
+        public void TestSplitInt()
+        {
+            var result = DataHelper.SplitInteger("2-4", "-", 1);
+            result.Should().Be(4);
+        }
+
+        [Test]
+        public void TestSplitLong()
+        {
+            var result = DataHelper.SplitLong("2-7", "-", 0);
+            result.Should().Be(2);
+        }
+
+        [Test]
+        public void TestSplitDouble()
+        {
+            var result = DataHelper.SplitDouble("2-6.8", "-", 1);
+            result.Should().Be(6.8);
+        }
+
+        [Test]
+        public void TestSplitIntNoIndex()
+        {
+            var result = DataHelper.SplitInteger("2-4", "-", 2);
+            result.Should().Be(0);
+        }
+
+        [Test]
+        public void TestSplitLongNoIndex()
+        {
+            var result = DataHelper.SplitDouble("2-6.8", "-", 2);
+            result.Should().Be(0);
+        }
+
+        [Test]
+        public void TestSplitDoubleNoIndex()
+        {
+            var result = DataHelper.SplitDouble("2-6.8", "-", 3);
+            result.Should().Be(0);
+        }
     }
 }
