@@ -9,6 +9,5 @@
         public int PassesDefended { get; set; }
         public int QbHits { get; set; }
         public int Touchdowns { get; set; }
-        public int Interceptions { get; set; }
     }
 }
