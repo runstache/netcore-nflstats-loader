@@ -15,8 +15,8 @@ namespace NflStats.Loader.Models
         [JsonProperty(PropertyName = "yards")]
         public string Yards { get; set; }
 
-        [JsonProperty(PropertyName = "averageReturns")]
-        public string AverageReturns { get; set; }
+        [JsonProperty(PropertyName = "averageReturn")]
+        public string AverageReturn { get; set; }
 
         [JsonProperty(PropertyName = "longReturn")]
         public string LongReturn { get; set; }
