@@ -7,6 +7,7 @@
         public int LongFieldGoal { get; set; }
         public int ExtraPoints { get; set; }
         public int ExtraPointAttempts { get; set; }
+        public int Points { get; set; }
         public int Punts { get; set; }
         public int PuntTotalYards { get; set; }
         public double AveragePunt { get; set; }

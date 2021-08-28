@@ -20,7 +20,8 @@ namespace NflStats.Data.Configuration
             builder.Property(c => c.PuntLongest).IsRequired().HasColumnName("PuntLongest").HasColumnType("int");
             builder.Property(c => c.Punts).IsRequired().HasColumnName("Punts").HasColumnType("int");
             builder.Property(c => c.PuntTotalYards).IsRequired().HasColumnName("PuntTotalYards").HasColumnType("int");
-            builder.Property(c => c.Touchbacks).IsRequired().HasColumnName("Touchbacks").HasColumnType("int");            
+            builder.Property(c => c.Touchbacks).IsRequired().HasColumnName("Touchbacks").HasColumnType("int");
+            builder.Property(c => c.Points).IsRequired().HasColumnName("Points").HasColumnType("int");
         }
     }
 }
