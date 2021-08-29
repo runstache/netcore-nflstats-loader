@@ -32,7 +32,7 @@ namespace NflStatsLoader.Test.Transformers
 
             var model = JsonConvert.DeserializeObject<MatchupModel>(json, settings);
 
-            var result = transformer.Transform(model);
+            var result = MatchupTransformer.Transform(model);
 
             result.Count.Should().Be(2);
 

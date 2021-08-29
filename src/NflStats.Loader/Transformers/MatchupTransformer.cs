@@ -7,7 +7,7 @@ namespace NflStats.Loader.Transformers
 {
     public class MatchupTransformer
     {
-        public Dictionary<string,TeamStat> Transform(MatchupModel item)
+        public static Dictionary<string,TeamStat> Transform(MatchupModel item)
         {
             var result = new Dictionary<string, TeamStat>();
             var home = new TeamStat()
