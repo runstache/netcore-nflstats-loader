@@ -20,11 +20,14 @@ namespace NflStats.Loader.Processors
             ITransformer<FumbleModel, FumbleStat> transformer = new FumbleTransformer();
             foreach (FumbleModel model in models)
             {
-                var player = ProcessPlayer(model.Player);
-                var stat = transformer.Transform(model);
-                AddCommonInfo(stat, player.Id, schedule);
-                AddOriginalId(stat);
-                repo.Save(stat);
+                if (!string.IsNullOrEmpty(model.Player.Url))
+                {
+                    var player = ProcessPlayer(model.Player);
+                    var stat = transformer.Transform(model);
+                    AddCommonInfo(stat, player.Id, schedule);
+                    AddOriginalId(stat);
+                    repo.Save(stat);
+                }
             }
         }
     }

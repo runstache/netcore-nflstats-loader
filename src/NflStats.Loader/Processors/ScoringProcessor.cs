@@ -22,10 +22,13 @@ namespace NflStats.Loader.Processors
 
             foreach (var model in models)
             {
-                var stat = transformer.Transform(model);
-                AddCommonInfo(stat, schedule);
-                AddOriginalId(stat, c=>c.ScheduleId == schedule.Id && c.TeamId == schedule.TeamId && c.Quarter == stat.Quarter);
-                repo.Save(stat);
+                if (model.Quarter > 0)
+                {
+                    var stat = transformer.Transform(model);
+                    AddCommonInfo(stat, schedule);
+                    AddOriginalId(stat, c => c.ScheduleId == schedule.Id && c.TeamId == schedule.TeamId && c.Quarter == stat.Quarter);
+                    repo.Save(stat);
+                }
             }
 
         }

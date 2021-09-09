@@ -4,6 +4,8 @@ using NflStats.Data.Repositories;
 using NflStats.Loader.Models;
 using NflStats.Loader.Transformers;
 using System.Collections.Generic;
+using System.Linq;
+
 
 namespace NflStats.Loader.Processors
 {
@@ -20,11 +22,31 @@ namespace NflStats.Loader.Processors
             var transformer = new ReturnTransformer();
             foreach(var model in models)
             {
-                var player = ProcessPlayer(model.Player);
-                var stat = transformer.Transform(model);
-                AddCommonInfo(stat, player.Id, schedule);
-                AddOriginalId(stat);
-                repo.Save(stat);
+                if (!string.IsNullOrEmpty(model.Player.Url))
+                {
+                    var player = ProcessPlayer(model.Player);
+                    var stat = transformer.Transform(model);
+                    AddCommonInfo(stat, player.Id, schedule);
+                    MergeReturns(stat);
+                    repo.Save(stat);
+                }
+            }
+        }
+
+        private void MergeReturns(ReturnStat stat)
+        {
+            var original = repo.GetReturnStats(stat.PlayerId).Where(c => c.ScheduleId == stat.ScheduleId).FirstOrDefault();
+            if (original != null)
+            {
+                stat.Id = original.Id;
+                stat.KickReturns = original.KickReturns + stat.KickReturns;
+                if (original.LongReturn > stat.LongReturn)
+                {
+                    stat.LongReturn = original.LongReturn;
+                }
+                stat.Touchdowns = original.Touchdowns + stat.Touchdowns;
+                stat.Yards = original.Yards + stat.Yards;
+                stat.AverageReturn = stat.Yards / stat.KickReturns;
             }
         }
     }

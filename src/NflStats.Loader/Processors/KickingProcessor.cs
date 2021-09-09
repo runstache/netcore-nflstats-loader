@@ -22,11 +22,14 @@ namespace NflStats.Loader.Processors
             var transformer = new KickingTransformer();
             foreach (var model in models)
             {
-                var player = ProcessPlayer(model.Player);
-                var stat = transformer.Transform(model);
-                AddCommonInfo(stat, player.Id, schedule);
-                MergeItem(stat);
-                repo.Save(stat);
+                if (!string.IsNullOrEmpty(model.Player.Url))
+                {
+                    var player = ProcessPlayer(model.Player);
+                    var stat = transformer.Transform(model);
+                    AddCommonInfo(stat, player.Id, schedule);
+                    MergeItem(stat);
+                    repo.Save(stat);
+                }
             }
         }
 

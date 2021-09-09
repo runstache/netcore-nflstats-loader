@@ -17,22 +17,32 @@ namespace NflStats.Loader.Processors
 
         public void ProcessItem(TeamStat stat, GameModel model, string team, string opponent, ScheduleItem schedule)
         {
-            AddCommonInfo(stat, schedule);
+            if (stat != null)
+            {
+                AddCommonInfo(stat, schedule);
 
-            // Get the Box scores
-            var boxscore = model.Matchup.Boxscore.Where(c => c.Team.ToLower() == team.ToLower()).FirstOrDefault();
-            var opponentBoxScore = model.Matchup.Boxscore.Where(c => c.Team.ToLower() == opponent.ToLower()).FirstOrDefault();
+                // Get the Box scores
+                var boxscore = model.Matchup.Boxscore.Where(c => c.Team.ToLower() == team.ToLower()).FirstOrDefault();
+                var opponentBoxScore = model.Matchup.Boxscore.Where(c => c.Team.ToLower() == opponent.ToLower()).FirstOrDefault();
 
-            stat.PointsScored = DataHelper.ParseInt(boxscore.Final);
-            stat.PointsAllowed = DataHelper.ParseInt(opponentBoxScore.Final);
+                if (boxscore != null)
+                {
+                    stat.PointsScored = DataHelper.ParseInt(boxscore.Final);
+                }
 
-            // Get the Big Plays
-            stat.PassOverFifteen = model.BigPlays.Where(c => c.Team.ToLower() == team).Sum(c => c.Pass);
-            stat.RushOverTen = model.BigPlays.Where(c => c.Team.ToLower() == team).Sum(c => c.Run);
-            stat.TotalTurnovers = model.BigPlays.Where(c => c.Team.ToLower() == team).Sum(c => c.Turnover);
+                if (opponentBoxScore != null)
+                {
+                    stat.PointsAllowed = DataHelper.ParseInt(opponentBoxScore.Final);
+                }
 
-            AddOriginalId(stat, c => c.TeamId == stat.TeamId && c.ScheduleId == stat.ScheduleId);
-            repo.Save(stat);
+                // Get the Big Plays
+                stat.PassOverFifteen = model.BigPlays.Where(c => c.Team.ToLower() == team.ToLower()).Sum(c => c.Pass);
+                stat.RushOverTen = model.BigPlays.Where(c => c.Team.ToLower() == team.ToLower()).Sum(c => c.Run);
+                stat.TotalTurnovers = model.BigPlays.Where(c => c.Team.ToLower() == team.ToLower()).Sum(c => c.Turnover);
+
+                AddOriginalId(stat, c => c.TeamId == stat.TeamId && c.ScheduleId == stat.ScheduleId);
+                repo.Save(stat);
+            }
         }
     }
 }

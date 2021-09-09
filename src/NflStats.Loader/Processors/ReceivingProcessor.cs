@@ -21,11 +21,14 @@ namespace NflStats.Loader.Processors
             ITransformer<ReceivingModel, ReceivingStat> transformer = new ReceivingTransformer();
             foreach (ReceivingModel model in models)
             {
-                var player = ProcessPlayer(model.Player);
-                var stat = transformer.Transform(model);
-                AddCommonInfo(stat, player.Id, schedule);
-                AddOriginalId(stat);
-                repo.Save(stat);
+                if (!string.IsNullOrEmpty(model.Player.Url))
+                {
+                    var player = ProcessPlayer(model.Player);
+                    var stat = transformer.Transform(model);
+                    AddCommonInfo(stat, player.Id, schedule);
+                    AddOriginalId(stat);
+                    repo.Save(stat);
+                }
             }
         }
     }

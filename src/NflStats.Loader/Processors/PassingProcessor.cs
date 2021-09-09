@@ -21,12 +21,15 @@ namespace NflStats.Loader.Processors
 
             foreach (PassingModel model in models)
             {
-                // Transform the Player
-                var player = ProcessPlayer(model.Player);
-                var stat = passingTransformer.Transform(model);
-                AddCommonInfo(stat, player.Id, schedule);
-                AddOriginalId(stat);
-                repo.Save(stat);
+                if (!string.IsNullOrEmpty(model.Player.Url))
+                {
+                    // Transform the Player
+                    var player = ProcessPlayer(model.Player);
+                    var stat = passingTransformer.Transform(model);
+                    AddCommonInfo(stat, player.Id, schedule);
+                    AddOriginalId(stat);
+                    repo.Save(stat);
+                }
             }
         }
     }
