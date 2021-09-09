@@ -39,7 +39,7 @@ namespace NflStats.Data.Repositories
 
         public bool Exists(ScheduleItem item)
         {
-            return base.Query<ScheduleItem>(c => c.TeamId == item.TeamId && c.OpponentId == item.OpponentId && c.GameId == item.GameId).Any();
+            return base.Query<ScheduleItem>(c => c.TeamId == item.TeamId && c.GameId == item.GameId).Any();
         }
 
         public bool Exists(Team team)
