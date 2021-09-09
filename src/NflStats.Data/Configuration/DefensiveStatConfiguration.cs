@@ -10,7 +10,7 @@ namespace NflStats.Data.Configuration
         {
             BasePlayerStatConfiguration.Configure(builder);
             builder.ToTable("tblDefensiveStats");
-            builder.Property(c => c.PassesDefended).IsRequired().HasColumnName("PassessDefended").HasColumnType("int");
+            builder.Property(c => c.PassesDefended).IsRequired().HasColumnName("PassesDefended").HasColumnType("int");
             builder.Property(c => c.QbHits).IsRequired().HasColumnName("QbHits").HasColumnType("int");
             builder.Property(c => c.Sacks).IsRequired().HasColumnName("Sacks").HasColumnType("int");
             builder.Property(c => c.SoloTackles).IsRequired().HasColumnName("SoloTackles").HasColumnType("float");
