@@ -11,7 +11,7 @@ namespace NflStats.Loader.Transformers
         {
             var result = new Player()
             {
-                Url = item.Url,
+                Url = item.Url.Replace("http://", "https://"),
                 Name = item.Name
             };
 
