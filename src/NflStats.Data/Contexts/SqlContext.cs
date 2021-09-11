@@ -33,6 +33,7 @@ namespace NflStats.Data.Contexts
         public DbSet<FumbleStat> Fumbles { get; set; }
         public DbSet<InterceptionStat> Interceptions { get; set; }
         public DbSet<ScoringStat> Scoring { get; set; }
+        public DbSet<RosterEntry> RosterEntries { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -60,6 +61,7 @@ namespace NflStats.Data.Contexts
             modelBuilder.ApplyConfiguration(new FumbleStatConfiguration());
             modelBuilder.ApplyConfiguration(new InterceptionStatConfiguration());
             modelBuilder.ApplyConfiguration(new ScoringStatConfiguration());
+            modelBuilder.ApplyConfiguration(new RosterEntryConfiguration());
         }
 
     }

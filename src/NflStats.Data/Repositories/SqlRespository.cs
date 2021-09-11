@@ -82,6 +82,11 @@ namespace NflStats.Data.Repositories
             return base.Query<ScoringStat>(c => c.ScheduleId == stat.ScheduleId && c.TeamId == stat.TeamId && c.Quarter == stat.Quarter).Any();
         }
 
+        public bool Exists(RosterEntry entry)
+        {
+            return base.Query<RosterEntry>(c => c.PlayerId == entry.PlayerId && c.TeamId == entry.TeamId).Any();
+        }
+
         public DefensiveStat GetDefensiveStat(long id)
         {
             return base.Query<DefensiveStat>(c => c.Id == id).FirstOrDefault();
@@ -200,6 +205,21 @@ namespace NflStats.Data.Repositories
         public IQueryable<ReturnStat> GetReturnStats(long playerId)
         {
             return base.Query<ReturnStat>(c => c.PlayerId == playerId);
+        }
+
+        public IQueryable<RosterEntry> GetRosterEntries()
+        {
+            return ctx.RosterEntries;
+        }
+
+        public IQueryable<RosterEntry> GetRosterEntries(int teamId)
+        {
+            return base.Query<RosterEntry>(c => c.TeamId == teamId);
+        }
+
+        public RosterEntry GetRosterEntry(long id)
+        {
+            return base.Query<RosterEntry>(c => c.Id == id).FirstOrDefault();
         }
 
         public RushingStat GetRushingStat(long id)
@@ -467,6 +487,18 @@ namespace NflStats.Data.Repositories
             else
             {
                 return base.Add(stat);
+            }
+        }
+
+        public RosterEntry Save(RosterEntry entry)
+        {
+            if (entry.Id > 0)
+            {
+                return base.Update(entry);
+            }
+            else
+            {
+                return base.Add(entry);
             }
         }
     }

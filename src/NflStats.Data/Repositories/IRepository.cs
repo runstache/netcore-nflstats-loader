@@ -22,6 +22,7 @@ namespace NflStats.Data.Repositories
         FumbleStat Save(FumbleStat stat);
         InterceptionStat Save(InterceptionStat stat);
         ScoringStat Save(ScoringStat stat);
+        RosterEntry Save(RosterEntry entry);
 
 
         #endregion
@@ -86,6 +87,11 @@ namespace NflStats.Data.Repositories
         IQueryable<ScoringStat> GetScoringStats();
         IQueryable<ScoringStat> GetScoringStats(int teamId);
 
+        RosterEntry GetRosterEntry(long id);
+        IQueryable<RosterEntry> GetRosterEntries();
+        IQueryable<RosterEntry> GetRosterEntries(int teamId);
+
+
         #endregion
 
         #region Exists Methods
@@ -104,6 +110,7 @@ namespace NflStats.Data.Repositories
         bool Exists(FumbleStat stat);
         bool Exists(InterceptionStat stat);
         bool Exists(ScoringStat stat);
+        bool Exists(RosterEntry entry);
         #endregion
 
     }
